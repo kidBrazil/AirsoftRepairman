@@ -1,14 +1,5 @@
 //
 //
-// ███████╗██╗     ██╗     ██╗██████╗ ███████╗██╗███████╗
-// ██╔════╝██║     ██║     ██║██╔══██╗██╔════╝██║██╔════╝
-// █████╗  ██║     ██║     ██║██████╔╝███████╗██║███████╗
-// ██╔══╝  ██║     ██║     ██║██╔═══╝ ╚════██║██║╚════██║
-// ███████╗███████╗███████╗██║██║     ███████║██║███████║
-// ╚══════╝╚══════╝╚══════╝╚═╝╚═╝     ╚══════╝╚═╝╚══════╝
-// ------------------------------------------------------
-// D        I        G        I        T       A        L
-// ------------------------------------------------------
 //
 // Base Configuration Variables for Keaton Builds
 // Written By: Lucas Moreira - l.moreira@live.ca
@@ -23,13 +14,13 @@
 // weight and base color for the MAIN font.
 
 // [ Body Font ]
-@standard-font: sans-serif;
-@standard-heading-weight: 600;
+@standard-font:'Open Sans', sans-serif;
+@standard-weight: 400;
 @standard-color: inherit;
 
 // [ Heading / Secondary Font ]
 @heading-font: sans-serif;
-@standard-weight: 400;
+@standard-heading-weight: 600;
 @heading-color: inherit;
 // [ Base Font Size ]
 @font-size-base:          18px;
@@ -57,9 +48,9 @@
 // Colour Pallet ---------------------------------------------------[   ]
 
 //Brand Colours ---------------
-@main-color:#0463ff;
-@secondary-color:#fff;
-@accent-color:#fff;
+@main-color:#ed1c24;
+@secondary-color:#9e0b0f;
+@accent-color:@secondary-color;
 
 //Darker Mixes
 @darken-percent:25%;
@@ -75,18 +66,18 @@
 @accent-color-lt: lighten(@accent-color,@lighten-percent);
 
 //Background Colors ------------
-@body-bg: orange; //Main page Body Background
-@main-bg-color:orange;
-@secondary-bg-color:orange;
+@body-bg:#ececec; //Main page Body Background
+@main-bg-color:#cdcdcd;
+@secondary-bg-color:#959595;
 
 //Borders ----------------------
-@standard-border-color:orange;
-@dark-border-color:orange;
-@light-border-color:orange;
+@standard-border-color:@main-color;
+@dark-border-color:@secondary-color;
+@light-border-color:@main-color-lt;
 
 //Type colors -----------------
-@standard-type-color:orange;
-@heading-type-color:orange;
+@standard-type-color:#434343;
+@heading-type-color:@standard-type-color;
 
 //Social Colours --------------
 @facebook:#3b5998;
