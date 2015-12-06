@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7203c4fb-e189-4d96-a5aa-24302c00106c" name="Default" comment="">
-      <change type="DELETED" beforePath="I:\WebGithub\AirsoftRepairman\Resources\Branding\FinalComps\AirsoftRepairman-LogoWeb-Horz.svg" afterPath="" />
-      <change type="DELETED" beforePath="I:\WebGithub\AirsoftRepairman\Resources\Branding\FinalComps\AirsoftRepairman-LogoWeb-Icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="I:\WebGithub\AirsoftRepairman\Resources\Branding\FinalComps\AirsoftRepairman-LogoWeb-Vert.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Branding/FinalComps/Airsoft-Chevron.ai" afterPath="$PROJECT_DIR$/Resources/Branding/FinalComps/Airsoft-Chevron.ai" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoHorizontal-Final.ai" afterPath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoHorizontal-Final.ai" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoIcon-Final.ai" afterPath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoIcon-Final.ai" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoVertical-Final.ai" afterPath="$PROJECT_DIR$/Resources/Branding/FinalComps/airsoftRepairman-LogoVertical-Final.ai" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" afterPath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/config.less" afterPath="$PROJECT_DIR$/webRoot/css/config.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/base/structure.less" afterPath="$PROJECT_DIR$/webRoot/css/base/structure.less" />
-    </list>
+    <list default="true" id="7203c4fb-e189-4d96-a5aa-24302c00106c" name="Default" comment="" />
     <ignored path="AirsoftRepairman.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
