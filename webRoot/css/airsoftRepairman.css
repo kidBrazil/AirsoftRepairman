@@ -1010,11 +1010,11 @@ td.visible-lg {
   }
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1;
   color: inherit;
-  background-color: orange;
+  background-color: #cdcdcd;
 }
 .content-wrapper {
   margin: 0 auto;
@@ -1113,7 +1113,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   color: inherit;
 }
