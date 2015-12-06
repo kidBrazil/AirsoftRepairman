@@ -1,0 +1,104 @@
+//
+//
+// ███████╗██╗     ██╗     ██╗██████╗ ███████╗██╗███████╗
+// ██╔════╝██║     ██║     ██║██╔══██╗██╔════╝██║██╔════╝
+// █████╗  ██║     ██║     ██║██████╔╝███████╗██║███████╗
+// ██╔══╝  ██║     ██║     ██║██╔═══╝ ╚════██║██║╚════██║
+// ███████╗███████╗███████╗██║██║     ███████║██║███████║
+// ╚══════╝╚══════╝╚══════╝╚═╝╚═╝     ╚══════╝╚═╝╚══════╝
+// ------------------------------------------------------
+// D        I        G        I        T       A        L
+// ------------------------------------------------------
+//
+// Base Styles for KEATON Builds
+// Written By: Lucas Moreira - l.moreira@live.ca
+//
+// ------------------------------------------------------
+//
+// This file contains the map and calls for all the rest
+// of the .Less file structure
+//
+//-------------------------------------------------------
+/*
+    FOLDER STRUCTURE:
+
+    -- [ProjectTheme]
+    -------CSS
+    -----------LESS
+                 |
+                  Global Reset - Meyers reset.. self explanatory
+                 |
+                 Variables - self explanatory
+                 |
+                 [Mixins] - Elements based mixins
+                 |
+                 [Flex Classes] - Suite of Flex Shortcuts
+                 |
+                 [Development Square] - For testing responsive layouts
+                 |
+                 [Utilities Classes] - Helpful classes for doing stuff
+                 |
+                 [Core CSS] - Core Structure, Typography & Scaffold
+                 |
+                 [Buttons] - Self Explanatory
+                 |
+                 [Header] - Self Explanatory
+                 |
+                 [Navigation] - Self Explanatory
+                 |
+                 [Footer] - Self Explanatory
+                 |
+                 [Forms] - Self Explanatory
+                 |
+                 [Keyframes] - Animations & Keyframes
+                 |
+                 [exploder] - IE Fixes
+
+-------------------------------------------------------*/
+
+// [Global Reset]
+@import "reset.less";
+
+// [Variables & Mixins]
+@import "config.less";
+@import "mixins/elements.less";
+
+// [Development Square]
+@import "development/development.less";
+
+// [Utilities Classes]
+@import "utilities/utilities.less";
+@import "margins/margins.less";
+@import "flex/flex.less";
+
+// [Core CSS]
+@import "base/structure.less";
+@import "base/scaffold.less";
+@import "base/type.less";
+
+// [Buttons]
+@import "buttons/buttons.less";
+
+// [Header & Navigation]
+@import "headers/header.less";
+@import "nav/navigation.less";
+
+// [Social]
+@import "social/social.less";
+
+// [Forms]
+@import "forms/submit.less";
+
+// [ Theme Styles | Content ] -----------------------[START]
+// Place all of your imports here please.
+// [ Theme Styles | Content ] -----------------------[END]
+// [Footer]
+@import "footer/footer.less";
+
+// [Keyframes]
+@import "keyframes/keyframes.less";
+
+//[IE Fixes]
+@import "exploder/exploder.less";
+
+

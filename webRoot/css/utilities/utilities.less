@@ -1,0 +1,242 @@
+//
+// Utilities
+//------------------------------------
+// Helpful utility classes and shortcuts.
+
+//Clearfix
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+
+// Visibility utilities
+.visible-xs {
+  .responsive-invisibility();
+
+  @media @xs {
+    .responsive-visibility();
+  }
+}
+.visible-sm {
+  .responsive-invisibility();
+
+  @media @sm {
+    .responsive-visibility();
+  }
+}
+.visible-md {
+  .responsive-invisibility();
+
+  @media @md {
+    .responsive-visibility();
+  }
+}
+.visible-lg {
+  .responsive-invisibility();
+
+  @media @lg {
+    .responsive-visibility();
+  }
+}
+
+.hidden-xs {
+  @media @xs {
+    .responsive-invisibility();
+  }
+}
+.hidden-sm {
+  @media @sm {
+    .responsive-invisibility();
+  }
+}
+.hidden-md {
+  @media @md {
+    .responsive-invisibility();
+  }
+}
+.hidden-lg {
+  @media @lg {
+    .responsive-invisibility();
+  }
+}
+
+
+//
+// Floats
+//-------------------------------------------
+
+.f-left{
+  float:none !important;
+
+  @media @xs{
+    float:none !important;
+  }//Desktop
+  @media @sm{
+    float:left !important;
+  }//Desktop
+  @media @md{
+    float:left !important;
+  }//Desktop
+  @media @lg{
+    float:left !important;
+  }//Desktop
+}//Float left
+
+.f-right{
+  float:none !important;
+
+  @media @xs{
+    float:none !important;
+  }//Desktop
+  @media @sm{
+    float:right !important;
+  }//Desktop
+  @media @md{
+    float:right !important;
+  }//Desktop
+  @media @lg{
+    float:right !important;
+  }//Desktop
+}//Float left
+
+//
+// Visibility
+//--------------------------------------------
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+//
+// Text Shadow Classes
+//---------------------------------------------
+.soft-shadow{
+  text-shadow:1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.medium-shadow{
+  text-shadow:0 1px 5px rgba(0,0,0,0.7);
+}
+
+.heavy-shadow{
+  text-shadow:2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+//
+// Vertical Align
+//----------------------------------------------
+.vertical-align {
+   position: relative;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+ }
+
+
+//
+//Testing
+//--------------------------------------------------
+.test-div{
+  width:100%;
+  height:100px;
+  background:blue;
+
+  &-red{
+    width:100%;
+    height:100px;
+    background:red;
+  }//red
+}//test-div
+
+//Show Hide Specific to Social
+
+.show-desk{
+  display:none;
+
+  @media @xs{
+    display:none;
+  }//Desktop
+  @media @sm{
+    display:inline-block;
+  }//Desktop
+  @media @md{
+    display:inline-block;
+  }//Desktop
+  @media @lg{
+    display:inline-block;
+  }//Desktop
+}
+
+.show-mob{
+  display:inline-block;
+
+  @media @xs{
+    display:inline-block;
+  }//Desktop
+  @media @sm{
+    display:none;
+  }//Desktop
+  @media @md{
+    display:none;
+  }//Desktop
+  @media @lg{
+    display:none;
+  }//Desktop
+}
+
+.display-none{
+    display:none;
+}
+.display-show{
+    display:normal;
+}
+
+.hide-mob{
+  display:none;
+
+  @media @xs{
+    display:block;
+  }//Desktop
+  @media @sm{
+    display:block;
+  }//Desktop
+  @media @md{
+    display:block;
+  }//Desktop
+  @media @lg{
+    display:block;
+  }//Desktop
+}
+
+// IE Hacks
+// SVG FIX!
+//--------------------------
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+.ie9 img[src*=".svg"] {
+  width: 100%;
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%;
+  }
+}

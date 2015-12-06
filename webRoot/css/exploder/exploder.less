@@ -1,0 +1,49 @@
+//
+// IE FIXES // [ IE 8,9,10 ] & [ GECKO ]
+// Any styles placed inside of the media query below will apply only to IE
+// Within that media query there are SUB queries for each screen size
+// This is only for IE specific fixes.
+//--------------------------------------
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  //
+  // Mobile Size
+  //-----------------------------------
+  .class{}
+
+  @media @xs{
+    //
+    // Phablet Size
+    //-----------------------------------
+    .class{}
+
+  }//Phablet
+  @media @sm{
+    //
+    // Tablet Size
+    //-----------------------------------
+    .class{}
+
+  }//Tablet
+
+
+  @media @md{
+
+    //
+    // Notebook Size
+    //-----------------------------------
+    .class{}
+
+  }//Notebook
+
+
+  @media @lg{
+    //
+    // Desktop Size
+    //-----------------------------------
+    .class{}
+
+  }//Desktop
+
+}//Ie Fixes Media Query

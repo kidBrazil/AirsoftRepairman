@@ -1,0 +1,132 @@
+//
+//
+// ███████╗██╗     ██╗     ██╗██████╗ ███████╗██╗███████╗
+// ██╔════╝██║     ██║     ██║██╔══██╗██╔════╝██║██╔════╝
+// █████╗  ██║     ██║     ██║██████╔╝███████╗██║███████╗
+// ██╔══╝  ██║     ██║     ██║██╔═══╝ ╚════██║██║╚════██║
+// ███████╗███████╗███████╗██║██║     ███████║██║███████║
+// ╚══════╝╚══════╝╚══════╝╚═╝╚═╝     ╚══════╝╚═╝╚══════╝
+// ------------------------------------------------------
+// D        I        G        I        T       A        L
+// ------------------------------------------------------
+//
+// Base Configuration Variables for Keaton Builds
+// Written By: Lucas Moreira - l.moreira@live.ca
+//
+// ------------------------------------------------------
+
+// Typography ---------------------------------------------------[   ]
+
+
+// [ Base Font Property ]
+// These include things like font-family, base
+// weight and base color for the MAIN font.
+
+// [ Body Font ]
+@standard-font: sans-serif;
+@standard-heading-weight: 600;
+@standard-color: inherit;
+
+// [ Heading / Secondary Font ]
+@heading-font: sans-serif;
+@standard-weight: 400;
+@heading-color: inherit;
+// [ Base Font Size ]
+@font-size-base:          18px;
+@line-height-base:        1.0; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@computed-line-height:    floor((@font-size-base * @line-height-base)); // ~20px
+
+
+// [ Font Size Calculator ]
+// *Should not really be adjusted unless strictly necessary.*
+// *To affect font-size site-wide just adjust the @font-size-base variable above.
+
+@font-size-large:         ceil((@font-size-base * 1.25));     // ~22px
+@font-size-small:         ceil((@font-size-base * 0.66667));  // ~12px
+@font-size-h1:            floor((@font-size-base * 3.0));     // ~54px
+@font-size-h2:            floor((@font-size-base * 2.6667));  // ~48px
+@font-size-h3:            ceil((@font-size-base * 2));        // ~36px
+@font-size-h4:            ceil((@font-size-base * 1.25));     // ~22px
+@font-size-h5:            @font-size-base;                    // ~18px
+@font-size-h6:            ceil((@font-size-base * 0.66667));  // ~12px
+
+//---------------------------------------------------------------[ / ]
+
+
+// Colour Pallet ---------------------------------------------------[   ]
+
+//Brand Colours ---------------
+@main-color:#0463ff;
+@secondary-color:#fff;
+@accent-color:#fff;
+
+//Darker Mixes
+@darken-percent:25%;
+
+@main-color-dk: darken(@main-color,@darken-percent);
+@secondary-color-dk: darken(@secondary-color,@darken-percent);
+@accent-color-dk: darken(@accent-color,@darken-percent);
+//lighter Mixes
+@lighten-percent:25%;
+
+@main-color-lt: lighten(@main-color,@lighten-percent);
+@secondary-color-lt: lighten(@secondary-color,@lighten-percent);
+@accent-color-lt: lighten(@accent-color,@lighten-percent);
+
+//Background Colors ------------
+@body-bg: orange; //Main page Body Background
+@main-bg-color:orange;
+@secondary-bg-color:orange;
+
+//Borders ----------------------
+@standard-border-color:orange;
+@dark-border-color:orange;
+@light-border-color:orange;
+
+//Type colors -----------------
+@standard-type-color:orange;
+@heading-type-color:orange;
+
+//Social Colours --------------
+@facebook:#3b5998;
+@twitter:#56a3d9;
+@googlePlus:#dd4b39;
+@pinterest:#cb211d;
+@whatsApp:#34af23;
+
+//Standard Colours --------------
+@black: #000000;
+@white: #ffffff;
+
+//---------------------------------------------------------------[ / ]
+
+
+
+// Variables
+
+//Responsive Variables ------------------------------------------[   ]
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+
+// Medium screen / desktop
+@screen-md:                  992px;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+
+@xs: ~'(min-width: @{screen-xs}) and (max-width: @{screen-xs-max})';
+@sm: ~'(min-width: @{screen-sm}) and (max-width: @{screen-sm-max})';
+@md: ~'(min-width: @{screen-md}) and (max-width: @{screen-md-max})';
+@lg: ~'(min-width: @{screen-lg})';
+
+//---------------------------------------------------------------[ / ]

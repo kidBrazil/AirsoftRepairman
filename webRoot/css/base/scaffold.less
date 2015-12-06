@@ -1,0 +1,65 @@
+//
+// Scaffold
+//--------------------------------
+
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  .box-sizing(border-box);
+}
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+//
+// Padding & margin Classes
+//-------------------------------
+
+//Content-top-padding
+.content-top-pad{
+  padding-top:30px;
+
+  @media @xs{
+    padding-top:40px;
+  }//Phablet
+  @media @sm{
+    padding-top:60px;
+  }//Tablet
+  @media @md{
+    padding-top:60px;
+  }//Notebook
+  @media @lg{
+    padding-top:60px;
+  }//Desktop
+
+}//content-top-padding
+
+//Display Table [Table,Cell,Row]
+//Used for vertical centering when the height is unknown.
+
+.display-table{
+  display:table;
+  vertical-align:middle;
+}//table
+
+.display-row{
+  display:table-row;
+  vertical-align:middle;
+}//row
+
+.display-cell{
+  display:table-cell;
+  vertical-align:middle;
+}//cell
+
+.display-block{
+  display:block;
+}//block
+
+.display-inline{
+  display:inline-block;
+}//block

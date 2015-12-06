@@ -1,0 +1,367 @@
+//
+// Margins & Paddings
+//------------------------------------------------
+// This section contains specific margin & padding
+// abstracted out so they can be used more easily
+// throughout the website.
+
+//Base margin Size - Starts at .margin and goes up
+@base-margin:10px;
+//Margin increment for M - L - XL
+//Increment is cummulative.
+@margin-increment:10px;
+//Responsive ratio ( how much to decrease from Desktop size)
+@responsive-ratio-md:1;
+@responsive-ratio-sm:.75;
+@responsive-ratio-xs:.65;
+@responsive-ratio-xxs:.50;
+
+
+.margin{
+  margin:@base-margin;
+
+  // 10 Pixel Margins
+  &-s{
+    margin:@base-margin;
+  }//10 px all
+  &-top-s{
+    margin:@base-margin 0 0 0;
+  }//10px top
+  &-right-s{
+    margin:0 @base-margin 0 0;
+  }//10px right
+  &-bottom-s{
+    margin:0 0 @base-margin 0;
+  }//10px bottom
+  &-left-s{
+    margin:0 0 0 @base-margin;
+  }//10px left
+  &-tb-s{
+    margin:@base-margin 0 @base-margin 0;
+  }//10px top
+  &-lr-s{
+    margin:0 @base-margin 0 @base-margin;
+  }//10px top
+
+  // 20 Pixel Margins ---------------------------
+  &-m{
+    margin:20px;
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//20px all
+  &-top-m{
+    margin:(@base-margin + @margin-increment) 0 0 0;
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//20px top
+  &-right-m{
+    margin:0 (@base-margin + @margin-increment) 0 0;
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//20px right
+  &-bottom-m{
+    margin:0 0 (@base-margin + @margin-increment) 0;
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//20px bottom
+  &-left-m{
+    margin:0 0 0 (@base-margin + @margin-increment);
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//20px left
+  &-tb-m{
+    margin:(@base-margin + @margin-increment) 0 (@base-margin + @margin-increment) 0;
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//10px top & Bottom
+  &-lr-m{
+    margin:0 (@base-margin + @margin-increment) 0 (@base-margin + @margin-increment);
+    @media @xs{
+
+    }//Phablet
+    @media @sm{
+
+    }//Tablet
+    @media @md{
+
+    }//Notebook
+    @media @lg{
+
+    }//Desktop
+  }//10px left & right
+
+
+  // 30 Pixel Margins --------------------------
+  &-l{
+    margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 2));
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 2));
+    }//desktop
+  }//30px all
+  &-top-l{
+    margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0 0 0;
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0 0 0;
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0 0 0;
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 2)) 0 0 0;
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 2)) 0 0 0;
+    }//desktop
+  }//30px top
+  &-right-l{
+    margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0 0;
+    @media @xs{
+      margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0 0;
+    }//Phablet
+    @media @sm{
+      margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0 0;
+    }//Tablet
+    @media @md{
+      margin:0 (@base-margin + (@margin-increment * 2)) 0 0;
+    }//Notebook
+    @media @lg{
+      margin:0 (@base-margin + (@margin-increment * 2)) 0 0;
+    }//Desktop
+  }//30px right
+  &-bottom-l{
+    margin:0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0;
+    @media @xs{
+      margin:0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0;
+    }//Phablet
+    @media @sm{
+      margin:0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0;
+    }//Tablet
+    @media @md{
+      margin:0 0 (@base-margin + (@margin-increment * 2)) 0;
+    }//Notebook
+    @media @lg{
+      margin:0 0 (@base-margin + (@margin-increment * 2)) 0;
+    }//Desktop
+  }//30px bottom
+  &-left-l{
+    margin:0 0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:0 0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:0 0 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:0 0 0 (@base-margin + (@margin-increment * 2));
+    }//Notebook
+    @media @lg{
+      margin:0 0 0 (@base-margin + (@margin-increment * 2));
+    }//Desktop
+  }//30px left
+  &-tb-l{
+    margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0;
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0;
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0;
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 2)) 0 (@base-margin + (@margin-increment * 2)) 0;
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 2)) 0 (@base-margin + (@margin-increment * 2)) 0;
+    }//Desktop
+  }//30px top & Bottom
+  &-lr-l{
+    margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm) 0 ((@base-margin + (@margin-increment * 2)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:0 (@base-margin + (@margin-increment * 2)) 0 (@base-margin + (@margin-increment * 2));
+    }//Notebook
+    @media @lg{
+      margin:0 (@base-margin + (@margin-increment * 2)) 0 (@base-margin + (@margin-increment * 2));
+    }//Desktop
+  }//30px left & right
+
+  // 40 Pixel Margins------------------------------
+  &-xl{
+    margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 3));
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 3));
+    }//Desktop
+  }//40px all
+  &-top-xl{
+    margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0 0 0;
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0 0 0;
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0 0 0;
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 3)) 0 0 0;
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 3)) 0 0 0;
+    }//Desktop
+  }//40px top
+  &-right-xl{
+    margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0 0;
+    @media @xs{
+      margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0 0;
+    }//Phablet
+    @media @sm{
+      margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0 0;
+    }//Tablet
+    @media @md{
+      margin:0 (@base-margin + (@margin-increment * 3)) 0 0;
+    }//Notebook
+    @media @lg{
+      margin:0 (@base-margin + (@margin-increment * 3)) 0 0;
+    }//Desktop
+  }//40px right
+  &-bottom-xl{
+    margin:0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0;
+    @media @xs{
+      margin:0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0;
+    }//desktop
+    @media @sm{
+      margin:0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0;
+    }//desktop
+    @media @md{
+      margin:0 0 (@base-margin + (@margin-increment * 3)) 0;
+    }//desktop
+    @media @lg{
+      margin:0 0 (@base-margin + (@margin-increment * 3)) 0;
+    }//desktop
+  }//40px bottom
+  &-left-xl{
+    margin:0 0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:0 0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:0 0 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:0 0 0 (@base-margin + (@margin-increment * 3));
+    }//Notebook
+    @media @lg{
+      margin:0 0 0 (@base-margin + (@margin-increment * 3));
+    }//Desktop
+  }//40px left
+  &-tb-xl{
+    margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0;
+    @media @xs{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0;
+    }//Phablet
+    @media @sm{
+      margin:((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0;
+    }//Tablet
+    @media @md{
+      margin:(@base-margin + (@margin-increment * 3)) 0 (@base-margin + (@margin-increment * 3)) 0;
+    }//Notebook
+    @media @lg{
+      margin:(@base-margin + (@margin-increment * 3)) 0 (@base-margin + (@margin-increment * 3)) 0;
+    }//Desktop
+  }//40px top & Bottom
+  &-lr-xl{
+    margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xxs);
+    @media @xs{
+      margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-xs);
+    }//Phablet
+    @media @sm{
+      margin:0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm) 0 ((@base-margin + (@margin-increment * 3)) * @responsive-ratio-sm);
+    }//Tablet
+    @media @md{
+      margin:0 (@base-margin + (@margin-increment * 3)) 0 (@base-margin + (@margin-increment * 3));
+    }//Notebook
+    @media @lg{
+      margin:0 (@base-margin + (@margin-increment * 3)) 0 (@base-margin + (@margin-increment * 3));
+    }//Desktop
+  }//40px left & right
+}//Margins

@@ -1,0 +1,187 @@
+//
+// Fonts [ Calls / Sizes / Colors / Responsive ]
+//--------------------------------------------------------
+//
+// This file contains all the pertinent base setup
+// for the website typography. Styles may be
+// overwritten by other classes but these control the base
+// typography of the site.
+
+
+// Font Calls -----------------------------------[ START ]
+// Place your @fontface calls here!
+
+// Font Calls -----------------------------------[ END ]
+
+
+//
+// Base Typography [ responsive ]----------------[ START ]
+//
+
+//Base styles are set here to reflect across the website.
+//Depending on the need of specific layouts or sections of the website
+//you might find that these styles are overwritten elsewhere - Usually
+//can be found by searching the class name of the parent div.
+
+//Heading Base
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @standard-font;
+  font-weight: @standard-heading-weight;
+  color: @standard-color;
+}
+
+//Base Sizes for fonts
+h1, .h1 {
+  font-size: (@font-size-h1 - 25);
+  line-height:32px;
+
+  @media @xs{
+    font-size: (@font-size-h1 - 10);
+    line-height:52px;
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h1 - 5);
+    line-height:58px;
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h1;
+    line-height:62px;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h1;
+    line-height:62px;
+  }//Desktop
+}//H1 Heading
+
+h2, .h2 {
+  font-size: (@font-size-h2 - 18);
+
+  @media @xs{
+    font-size: (@font-size-h2 - 10);
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h2 - 5);
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h2;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h2;
+  }//Desktop
+}//H2
+
+h3, .h3 {
+  font-size: (@font-size-h3 - 13);
+
+  @media @xs{
+    font-size: (@font-size-h3 - 10);
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h3 - 5);
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h3;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h3;
+  }//Desktop
+}//H3
+
+h4, .h4 {
+  font-size: (@font-size-h4 - 8);
+
+  @media @xs{
+    font-size: (@font-size-h4 + 2);
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h4 - 2);
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h4;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h4;
+  }//Desktop
+}//H4
+
+h5, .h5 {
+  font-size: (@font-size-h5 - 10);
+
+  @media @xs{
+    font-size: (@font-size-h5 - 10);
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h5 - 5);
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h5;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h5;
+  }//Desktop
+
+}//H5
+
+h6, .h6 {
+  font-size: (@font-size-h6 - 10);
+
+  @media @xs{
+    font-size: (@font-size-h6 - 10);
+  }//Phablet
+  @media @sm{
+    font-size: (@font-size-h6 - 5);
+  }//Tablet
+  @media @md{
+    font-size: @font-size-h6;
+  }//Notebook
+  @media @lg{
+    font-size: @font-size-h6;
+  }//Desktop
+}
+p {
+  font-size:(@font-size-base - 2);
+  font-weight: @standard-weight;
+  line-height:23px;
+
+  @media @xs{
+    font-size:(@font-size-base - 2);
+    line-height:23px;
+  }//Phablet
+  @media @sm{
+    font-size:@font-size-base;
+    line-height:26px;
+  }//Tablet
+  @media @md{
+    font-size:@font-size-base;
+    line-height:26px;
+  }//Notebook
+  @media @lg{
+    font-size:@font-size-base;
+    line-height:26px;
+  }//Desktop
+}//P
+
+// Base Typography [ responsive ]----------------[ END ]
+
+
+// Type Abstractions
+//
+//------------------------------------
+// Helpful shortcut classes for doing things like Italic
+
+.italics{font-style:italic!important;}
+.center-text {text-align:center !important;}
+.left-text{text-align:left!important;}
+.right-text {text-align:right!important;}
+.align-center {text-align:center !important;}
+.align-left{text-align:left!important;}
+.align-right {text-align:right!important;}
+.capitalize{text-transform: capitalize;}
+.uppercase{text-transform: uppercase;}
+
+//
+// Type Colors
+//-----------------------------------
+.white{color:#fff !important;}
+.black{color:@black !important;}
