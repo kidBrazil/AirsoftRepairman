@@ -1016,6 +1016,12 @@ body {
   color: inherit;
   background-color: #cdcdcd;
 }
+.medium-bkg {
+  background: #cdcdcd;
+}
+.dark-bkg {
+  background: #959595;
+}
 .content-wrapper {
   margin: 0 auto;
   position: relative;
@@ -1046,6 +1052,12 @@ body {
     min-width: 768px !important;
     max-width: 1000px !important;
   }
+}
+.temporary {
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/placeholder.jpg') center center;
+  background-size: cover;
 }
 * {
   -ms-box-sizing: border-box;
@@ -1318,6 +1330,15 @@ p {
     font-size: 18px;
     line-height: 26px;
   }
+}
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 .italics {
   font-style: italic!important;
