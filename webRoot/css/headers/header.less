@@ -2,3 +2,87 @@
 // Header Styles
 //-------------------------------------------
 
+// Splash Intro Section
+
+.splash-intro{
+  width:100%;
+  position:relative;
+  //Height is determined by content
+  //height:80vh;
+  background:transparent;
+  z-index:3;
+  overflow:hidden;
+  .transition(.3s);
+
+  //Background Container -------
+  &:before{
+    width:auto;
+    position:absolute;
+    display:block;
+    content:'';
+    //Negative numbers hide the fading around the edges due to blur
+    top:-20px;
+    left:-20px;
+    bottom:-20px;
+    right:-20px;
+    //Magic!
+    background:url('../images/main-header-bkg.png')no-repeat center center;
+    background-size:cover;
+    z-index:1;
+    .blur(7px);
+    .transition(.3s);
+  }//Background Container Pseudo Element
+
+  //Dark Overlay -------------
+  &:after{
+    width:100%;
+    position:absolute;
+    display:block;
+    content:'';
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:2;
+    .radial-gradient(ellipse,farthest-corner,50%,50%,rgba(0,0,0,.3),rgba(0,0,0,1));
+    opacity:.9;
+    .transition(.3s);
+    mix-blend-mode: darken;
+  }//Dark gradient overlay over image.
+
+  //Content Wrapper specific to intro
+  &-content{
+    width:20%;
+    margin:15vh auto;
+    position:relative;
+    z-index: 4;
+    max-width:380px;
+    min-width:150px;
+  }//Content Section /
+
+  .splash-intro-logo{
+    width:100%;
+    padding-top:100%;
+    display:block;
+    position:relative;
+    background:url('../svg/airsoftRepairman-LogoVertical-white.svg')no-repeat center center;
+    background-size:100%;
+    overflow:hidden;
+  }//Main Logo /
+
+  .repairman-chevron{
+    width: 26%;
+    padding-top: 23%;
+    margin:2vh auto 0 auto;
+    display:block;
+    position:relative;
+    overflow:hidden;
+    background:url('../svg/Airsoft-Chevron.svg')no-repeat center center;
+    background-size:100%;
+  }//repairman-chevron /
+
+}//Splash-intro
+
+.hidden-text{
+  visibility:hidden;
+  position:absolute;
+}

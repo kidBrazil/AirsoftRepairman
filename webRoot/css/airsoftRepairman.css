@@ -1015,6 +1015,8 @@ body {
   line-height: 1;
   color: inherit;
   background-color: #cdcdcd;
+  position: relative;
+  z-index: 1;
 }
 .medium-bkg {
   background: #cdcdcd;
@@ -1372,4 +1374,98 @@ a {
 }
 .black {
   color: #000000 !important;
+}
+.splash-intro {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  z-index: 3;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.splash-intro:before {
+  width: auto;
+  position: absolute;
+  display: block;
+  content: '';
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: url('../images/main-header-bkg.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -ms-filter: blur(7px);
+  -o-filter: blur(7px);
+  filter: blur(7px);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.splash-intro:after {
+  width: 100%;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: -webkit-radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0.3), #000000);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0.3), #000000);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0.3), #000000);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(ellipse farthest-corner at 50% 50%, rgba(0, 0, 0, 0.3), #000000);
+  /* Standard syntax (must be last) */
+  opacity: .9;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  mix-blend-mode: darken;
+}
+.splash-intro-content {
+  width: 20%;
+  margin: 15vh auto;
+  position: relative;
+  z-index: 4;
+  max-width: 380px;
+  min-width: 150px;
+}
+.splash-intro .splash-intro-logo {
+  width: 100%;
+  padding-top: 100%;
+  display: block;
+  position: relative;
+  background: url('../svg/airsoftRepairman-LogoVertical-white.svg') no-repeat center center;
+  background-size: 100%;
+  overflow: hidden;
+}
+.splash-intro .repairman-chevron {
+  width: 26%;
+  padding-top: 23%;
+  margin: 2vh auto 0 auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: url('../svg/Airsoft-Chevron.svg') no-repeat center center;
+  background-size: 100%;
+}
+.hidden-text {
+  visibility: hidden;
+  position: absolute;
+}
+.main-navigation {
+  width: 100%;
+  position: relative;
+  height: 80px;
+  background: #9e0b0f;
 }
