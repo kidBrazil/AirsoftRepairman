@@ -1,0 +1,91 @@
+// About Us Section
+
+.about-us{
+  width:100%;
+  position:relative;
+  top:0;
+  left:0;
+  padding:6vw 0;
+
+  &-welcome{
+    width:100%;
+    position:relative;
+
+    @media @xs{
+      width:100%;
+    }//Phablet
+    @media @sm{
+      width:100%;
+    }//Tablet
+    @media @md{
+      width:55%;
+    }//Noteboook
+    @media @lg{
+      width:55%;
+    }//Desktop
+
+    p{
+      font-weight:300;
+      width:100%;
+    }//Paragraph
+
+    .commitment-list{
+      list-style:none;
+      position:relative;
+    }//List
+    li{
+      display:inline-block;
+      position:relative;
+      margin:0 15px;
+
+      &:first-child{
+        margin:0 15px 0 0;
+      }//First
+      &:last-child{
+        margin:0 0 0 15px;
+      }//First
+
+      i{
+        font-size:35px;
+        font-weight:300;
+        position:relative;
+        top:5px;
+      }//Icon
+    }//List Item
+  }//about-us-welcome /
+
+  &-splash{
+    display:none;
+    position:relative;
+    width:42%;
+    @media @xs{
+      display:none;
+    }//Phablet
+    @media @sm{
+      display:none;
+    }//Tablet
+    @media @md{
+      display:block;
+    }//Noteboook
+    @media @lg{
+      display:block;
+    }//Desktop
+  }//.about-us-splash
+}//About us /
+
+
+//Airsoft Repairman Splash ------------------------ //
+.airsoft-repairman-splash{
+  width:80%;
+  padding-top:90%;
+  margin:0 auto;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-image: url('../svg/airsoftRepairman-logoIcon-white.svg'),
+  -webkit-linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0)),
+  url('../images/main-header-bkg-alternate.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 50% 57%, 50% 50%,50% 50%;
+  background-size:80%,100%, cover;
+  .rounded(4px);
+
+}// airsoft-repairman-splash /

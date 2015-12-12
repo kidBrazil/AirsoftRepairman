@@ -28,13 +28,15 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @standard-font;
   font-weight: @standard-heading-weight;
-  color: @standard-color;
+  color: inherit;
+  text-transform:uppercase;
 }
 
 //Base Sizes for fonts
 h1, .h1 {
   font-size: (@font-size-h1 - 25);
   line-height:32px;
+  letter-spacing:-2px;
 
   @media @xs{
     font-size: (@font-size-h1 - 10);
@@ -143,6 +145,9 @@ p {
   font-size:(@font-size-base - 2);
   font-weight: @standard-weight;
   line-height:23px;
+  color:inherit;
+  letter-spacing:-1px;
+  word-spacing:4px;
 
   @media @xs{
     font-size:(@font-size-base - 2);
@@ -195,3 +200,4 @@ a{
 //-----------------------------------
 .white{color:#fff !important;}
 .black{color:@black !important;}
+.main-red{color:@main-color;}
