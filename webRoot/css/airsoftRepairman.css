@@ -504,6 +504,10 @@ td.visible-lg {
     display: block;
   }
 }
+.hidden-text {
+  visibility: hidden;
+  position: absolute;
+}
 /*
  * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
  *
@@ -1052,7 +1056,7 @@ body {
 @media (min-width: 1200px) {
   .content-wrapper {
     min-width: 768px !important;
-    max-width: 1000px !important;
+    max-width: 1200px !important;
   }
 }
 .temporary {
@@ -1375,6 +1379,64 @@ a {
 .black {
   color: #000000 !important;
 }
+.social-btn-w {
+  background: url('../svg/social-icon-bkg-white.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-btn {
+  padding: 10px 5px;
+}
+.facebook {
+  color: inherit;
+  font-size: inherit;
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+}
+.facebook:hover {
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+  color: #3b5998;
+}
+.twitter {
+  color: inherit;
+  font-size: inherit;
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+}
+.twitter:hover {
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+  color: #56a3d9;
+}
+.instagram {
+  color: inherit;
+  font-size: inherit;
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+}
+.instagram:hover {
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+  color: #3b5998;
+}
 .splash-intro {
   width: 100%;
   position: relative;
@@ -1385,6 +1447,17 @@ a {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.splash-intro:hover:before {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .splash-intro:before {
   width: auto;
@@ -1433,12 +1506,58 @@ a {
   mix-blend-mode: darken;
 }
 .splash-intro-content {
-  width: 20%;
-  margin: 15vh auto;
+  width: 60%;
+  margin: 5vh auto;
   position: relative;
   z-index: 4;
-  max-width: 380px;
+  max-width: 420px;
   min-width: 150px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .splash-intro-content {
+    width: 60%;
+    margin: 7vh auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .splash-intro-content {
+    max-width: 580px;
+    margin: 10vh auto;
+    width: 65%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .splash-intro-content {
+    max-width: 580px;
+    margin: 10vh auto;
+    width: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  .splash-intro-content {
+    width: 30%;
+    margin: 10vh auto;
+  }
+}
+.splash-intro-content:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .splash-intro .splash-intro-logo {
   width: 100%;
@@ -1449,6 +1568,18 @@ a {
   background-size: 100%;
   overflow: hidden;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .splash-intro .splash-intro-logo {
+    background: url('../svg/airsoftRepairman-LogoHorizontal-White.svg') no-repeat center center;
+    padding-top: 30%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .splash-intro .splash-intro-logo {
+    background: url('../svg/airsoftRepairman-LogoHorizontal-White.svg') no-repeat center center;
+    padding-top: 30%;
+  }
+}
 .splash-intro .repairman-chevron {
   width: 26%;
   padding-top: 23%;
@@ -1458,14 +1589,163 @@ a {
   overflow: hidden;
   background: url('../svg/Airsoft-Chevron.svg') no-repeat center center;
   background-size: 100%;
+  opacity: .6;
+  -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 }
-.hidden-text {
-  visibility: hidden;
-  position: absolute;
+@media (min-width: 768px) and (max-width: 991px) {
+  .splash-intro .repairman-chevron {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .splash-intro .repairman-chevron {
+    display: none;
+  }
 }
 .main-navigation {
   width: 100%;
   position: relative;
-  height: 80px;
   background: #9e0b0f;
+  padding: 2vh 0;
+  z-index: 2;
+}
+.main-navigation .sub-navigation {
+  width: 28%;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 3;
+  display: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-navigation .sub-navigation {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation .sub-navigation {
+    display: flex;
+    width: 32%;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-navigation .sub-navigation {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-navigation .sub-navigation {
+    display: flex;
+  }
+}
+.main-navigation .sub-navigation a {
+  color: #ffffff;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-navigation .sub-navigation a:hover {
+  color: #ed1c24;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-navigation-logo {
+  display: none;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 280px;
+  min-width: 150px;
+  height: 123px;
+  z-index: 4;
+  background-image: url('../svg/airsoftRepairman-logoIcon-white.svg'), url('../svg/airsoftRepairman-NavBkg.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 13px, top center;
+  background-size: 45%, 100%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  -o-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-navigation-logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation-logo {
+    display: block;
+    background-position: 50% 7px, top center;
+    height: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-navigation-logo {
+    display: block;
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-navigation-logo {
+    display: block;
+  }
+}
+.main-navigation-logo:hover {
+  background-position: 50% 11px, top center;
+  background-size: 48%, 100%;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation-logo:hover {
+    background-position: 50% 5px, top center;
+  }
+}
+.main-navigation .sub-mobile-social {
+  display: flex;
+  position: relative;
+  width: 100%;
+  color: #ffffff;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-navigation .sub-mobile-social {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-navigation .sub-mobile-social {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-navigation .sub-mobile-social {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .main-navigation .sub-mobile-social {
+    display: none;
+  }
+}
+.main-navigation .sub-mobile-social a {
+  margin: 0 15px;
 }

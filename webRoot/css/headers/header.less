@@ -14,6 +14,14 @@
   overflow:hidden;
   .transition(.3s);
 
+  //Hover Effect
+  &:hover{
+    &:before{
+      .blur(2px);
+      .transition(.8s);
+    }
+  }//Parent triggers hover on image
+
   //Background Container -------
   &:before{
     width:auto;
@@ -51,12 +59,39 @@
 
   //Content Wrapper specific to intro
   &-content{
-    width:20%;
-    margin:15vh auto;
+    width:60%;
+    margin:5vh auto;
     position:relative;
     z-index: 4;
-    max-width:380px;
+    max-width:420px;
     min-width:150px;
+    .scale(1);
+    .transition(.3s);
+
+    @media @xs{
+      width:60%;
+      margin:7vh auto;
+    }//Phablet
+    @media @sm{
+      max-width:580px;
+      margin:10vh auto;
+      width:65%;
+    }//Tablet
+    @media @md{
+      max-width:580px;
+      margin:10vh auto;
+      width:65%;
+    }//Laptop
+    @media @lg{
+      width:30%;
+      margin:10vh auto;
+    }//Desktop
+
+    &:hover{
+      .transition(.3s);
+      .scale(1.1);
+    }//Hover effect;
+
   }//Content Section /
 
   .splash-intro-logo{
@@ -67,6 +102,15 @@
     background:url('../svg/airsoftRepairman-LogoVertical-white.svg')no-repeat center center;
     background-size:100%;
     overflow:hidden;
+
+    @media @sm{
+      background:url('../svg/airsoftRepairman-LogoHorizontal-White.svg')no-repeat center center;
+      padding-top:30%;
+    }//Tablet
+    @media @md{
+      background:url('../svg/airsoftRepairman-LogoHorizontal-White.svg')no-repeat center center;
+      padding-top:30%;
+    }//Laptop
   }//Main Logo /
 
   .repairman-chevron{
@@ -78,11 +122,15 @@
     overflow:hidden;
     background:url('../svg/Airsoft-Chevron.svg')no-repeat center center;
     background-size:100%;
+    opacity:.6;
+    -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.9), rgba(0,0,0,0));
+
+    @media @sm{
+      display:none;
+    }//Tablet
+    @media @md{
+     display:none;
+    }//Laptop
   }//repairman-chevron /
 
 }//Splash-intro
-
-.hidden-text{
-  visibility:hidden;
-  position:absolute;
-}

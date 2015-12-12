@@ -10,6 +10,120 @@
 .main-navigation{
   width:100%;
   position:relative;
-  height:80px;
   background:@main-nav-bg;
-}
+  padding:2vh 0;
+  z-index:2;
+
+  //Main Links [ Desktop ] -------------------
+  .sub-navigation{
+    width: 28%;
+    font-size: 18px;
+    text-transform:uppercase;
+    color:@white;
+    font-weight:600;
+    letter-spacing:2px;
+    z-index:3;
+    display:none;
+
+    @media @xs{
+      display:none;
+    }//Phablet
+    @media @sm{
+      display:flex;
+      width: 32%;
+      font-size: 14px;
+      letter-spacing:1px;
+    }//Tablet
+    @media @md{
+      display:flex;
+      font-size: 16px;
+      letter-spacing:1.5px;
+    }//Laptop
+    @media @lg{
+      display:flex;
+    }//Desktop
+
+    a{
+      color:@white;
+      text-shadow:1px 1.5px 4px rgba(0,0,0,0);
+      .transition(.3s);
+      &:hover{
+        color:@main-color;
+        text-shadow:1px 1.5px 4px rgba(0,0,0,0.7);
+        .transition(.3s);
+      }//Hover links
+    }//link-elements
+  }//Sub-Navigation ---------------------------
+
+  // Main Navigation Logo ---------------------
+  &-logo{
+    display:none;
+    width:20%;
+    position:absolute;
+    top:0;
+    left:50%;
+    max-width:280px;
+    min-width:150px;
+    height:123px;
+    z-index:4;
+    //Multiple Backgrounds Woot Woot
+    background-image: url('../svg/airsoftRepairman-logoIcon-white.svg'),
+                      url('../svg/airsoftRepairman-NavBkg.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 13px, top center;
+    background-size:45%, 100%;
+    .translate(-50%,0,0);
+    .transition(.1s);
+    @media @xs{
+      display:none;
+    }//phablet
+    @media @sm{
+      display:block;
+      background-position: 50% 7px, top center;
+      height:100px;
+    }//Tablet
+    @media @md{
+      display:block;
+      height:120px;
+    }//Laptop
+    @media @lg{
+      display:block;
+    }//Dsktop
+
+    &:hover{
+      background-position: 50% 11px, top center;
+      background-size:48%, 100%;
+      .transition(.1s);
+
+      @media @sm{
+        background-position: 50% 5px, top center;
+      }//Tablet
+    }//Hover Effects
+  }//Logo portion of Main nav ------------------------/
+
+  //Social Sub Nav for Mobile Only --------------------
+  .sub-mobile-social{
+    display:flex;
+    position:relative;
+    width:100%;
+    color:@white;
+    font-size:22px;
+    @media @xs{
+      display:flex;
+    }//Phablet
+    @media @sm{
+      display:none;
+    }//Tablet
+    @media @md{
+      display:none;
+    }//Laptop
+    @media @lg{
+      display:none;
+    }//Desktop
+
+    a{
+      margin:0 15px;
+    }//Link Spacing
+  }//sub-mobile-social
+
+}//main-navigation

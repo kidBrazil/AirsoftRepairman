@@ -1,8 +1,50 @@
 //
 // Button - Structure [ Shape / Sizes / Common Features ]
 //------------------------------------------------
+.social-btn-w{
+  background:url('../svg/social-icon-bkg-white.svg');
+  background-size:auto 100%;
+  background-repeat:no-repeat;
+  color:@white;
+  .transition(.3s);
+}//Social Button construct
 
+.mobile-btn{
+  padding:10px 5px;
+}//mobile button padding.
 
 //
 // Button - Abstractions [ Colors / Unique Styles ]
 //------------------------------------------------
+.facebook{
+  color:inherit;
+  font-size:inherit;
+  .transition(inherit);
+
+  &:hover{
+    .transition(inherit);
+    color:@facebook;
+  }
+}//facebook Colors
+
+.twitter{
+  color:inherit;
+  font-size:inherit;
+  .transition(inherit);
+
+  &:hover{
+    .transition(inherit);
+    color:@twitter;
+  }
+}//facebook Colors
+
+.instagram{
+  color:inherit;
+  font-size:inherit;
+  .transition(inherit);
+
+  &:hover{
+    .transition(inherit);
+    color:@facebook;
+  }
+}//facebook Colors
