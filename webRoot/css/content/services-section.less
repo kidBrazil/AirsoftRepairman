@@ -1,0 +1,98 @@
+//
+//Services Section
+//-----------------------------
+.airsoft-services{
+
+  .airsoft-services-container{
+    width:100%;
+    position:relative;
+    padding:2vw 0;
+    margin:0;
+  }//airsoft-services-container
+
+  //Abstractions
+  .airsoft-service-item{
+    width:100%;
+    margin:2vw 0;
+    //margin-top:-2.5vw;
+
+    @media @xs{
+      width:100%;
+      margin:2vw 0;
+      //margin-top:-2.5vw;
+    }//Phablet
+    @media @sm{
+      width:100%;
+      margin:2vw 0;
+      //margin-top:-2.5vw;
+    }//Tablet
+    @media @md{
+      width:62%;
+      margin:-2.5vw 0 0 0;
+    }//Laptop
+    @media @lg{
+      width:62%;
+      margin:-2.5vw 0 0 0;
+    }//Desktop
+
+    //Colorize titles
+    h3{color:@secondary-color;}
+
+    //Remove margin top From first one
+    &:first-child{
+      margin-top:0;
+    }//Zero out the first one
+
+    //Service Icon size
+    .service-item-icon{
+      width:25%;
+    }//Icon Size
+
+    .service-item-content{
+      width:70%;
+    }//Text Content
+  }//individual Floated Rows
+
+  //Left Side of Column
+  .left-item{
+    float:left;
+    .service-item-content{
+      text-align:left;
+      @media @xs{
+        text-align:left;
+      }//Phablet
+      @media @sm{
+        text-align:left;
+      }//Tablet
+      @media @md{
+        text-align:right;
+      }//Laptop
+      @media @lg{
+        text-align:right;
+      }//Desktop
+    }//Content
+    .service-item-icon{
+      order:0;
+      @media @xs{
+        order:0;
+      }//Phablet
+      @media @sm{
+        order:0;
+      }//Tablet
+      @media @md{
+        order:1;
+      }//Laptop
+      @media @lg{
+        order:1;
+      }//Desktop
+    }//Order
+  }//Left Item
+
+  //Right Side of Column
+  .right-item{
+    float:right;
+    .service-item-icon{
+      order:0;
+    }//Order
+  }//Right Items
+}//airsoft-services /
