@@ -75,11 +75,11 @@
 </nav><!-- Main Navigation / -->
 
 <!-- About Us - Content Section -->
-<section class="content-section about-us">
+<section id="About" class="content-section about-us">
     <div class="content-wrapper flex flex-start flex-between flex-row flex-wrap flex-middle">
         <!-- Welcome Block -->
-        <div class="about-us-welcome" aria-labelledby="Welcome">
-            <h1 id="#Welcome" class="margin-tb-l">Welcome Operators</h1>
+        <div class="about-us-welcome" aria-labelledby="Welcome-t">
+            <h1 id="#Welcome-t" class="margin-tb-l">Welcome Operators</h1>
             <p class="margin-bottom-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum,
                 ligula nec sollicitudin commodo, ligula massa commodo lacus, non vestibulum
                 urna leo non arcu. Mauris in pharetra nisl. Pellentesque interdum mollis ante
@@ -91,7 +91,7 @@
                 commodo nulla, et congue nisi. Duis quis quam ut metus condimentum ultrices a
                 mattis neque.
             </p>
-            <a href="#" title="Fix My Airsoft Gun" class="cta-btn red-btn margin-tb-l">
+            <a href="#" title="Fix My Airsoft Gun" aria-label="Fix My Airsoft Gun Form" class="cta-btn red-btn margin-tb-l">
                 <h4>Fix My Airsoft Gun! <i class="fa fa-arrow-circle-down fa-fw"></i> </h4>
             </a>
             <ul class="commitment-list">
@@ -115,6 +115,169 @@
     </div>
 </section><!-- About Us / -->
 
+<!-- Services - Content Section -->
+<section id="Services" class="content-section airsoft-services medium-bkg">
+    <div class="content-wrapper">
+        <!-- Title -->
+        <h1 id="Service-t" class="align-center">Services</h1>
+        <!-- Container -->
+        <div class="airsoft-services-container clearfix" aria-labelledby="Service-t">
+            <!-- Left-Side Unit -->
+            <div class="airsoft-service-item left-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-diagnostics.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>Diagnostics</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+            <!-- Right-Side Unit -->
+            <div class="airsoft-service-item right-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-repairs.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>Repairs</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+
+            <!-- Left-Side Unit -->
+            <div class="airsoft-service-item left-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-upgrades.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>Upgrades</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+            <!-- Right-Side Unit -->
+            <div class="airsoft-service-item right-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-electronics.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>Electronics</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+
+            <!-- Left-Side Unit -->
+            <div class="airsoft-service-item left-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-builds.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>Builds</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+            <!-- Right-Side Unit -->
+            <div class="airsoft-service-item right-item flex flex-between flex-middle flex-wrap">
+                <div class="service-item-icon">
+                    <img alt="Diagnostic Services Icon" src="svg/service-HPA.svg">
+                </div>
+                <div class="service-item-content">
+                    <h3>HPA / SMP / Polarstar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis ac elit in hendrerit. </p>
+                </div>
+            </div>
+
+        </div><!-- airsoft-services-container / -->
+    </div><!-- Wrapper / -->
+</section><!-- airsoft-services / -->
+
+<!-- Social Bar -->
+<div class="main-social-bar">
+    <div class="content-wrapper flex flex-start flex-between flex-middle flex-wrap">
+        <h3>Get More On Social Media</h3>
+        <nav class="sub-social flex-row flex-end flex-between" role="navigation" aria-label="Mobile Social Media Links">
+            <!--Facebook -->
+            <a href="#" class="social-btn-w desktop-btn facebook" role="button">
+                <span aria-hidden="true" class="hidden-text">Like Our Facebook Page</span>
+                <i class="fa fa-facebook fa-fw"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="#" class="social-btn-w desktop-btn twitter" role="button">
+                <span aria-hidden="true" class="hidden-text">Follow us on Twitter</span>
+                <i class="fa fa-twitter fa-fw"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-btn-w desktop-btn instagram" role="button">
+                <span aria-hidden="true" class="hidden-text">Join us on Instagram</span>
+                <i class="fa fa-instagram fa-fw"></i>
+            </a>
+        </nav><!-- sub-mobile-social -->
+    </div>
+</div><!-- main-social-bar / -->
+
+<!-- Contact Section -->
+<section class="content-section contact-section">
+    <div class="contact-section-map"></div>
+    <div class="contact-section-form">
+        <form action="https://docs.google.com/forms/d/1T2N4Jp1SkXHbXvznHdemn3GrWWuURrdPPTCaZEtCGtE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+            <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_173089346"><div class="ss-q-title">Name
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto">Enter your full name</div></label>
+                    <input type="text" name="entry.173089346" value="" class="ss-q-short" id="entry_173089346" dir="auto" aria-label="Name Enter your full name " aria-required="true" required="" title="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                    <div class="error-message" id="1879606120_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1076474683"><div class="ss-q-title">E-Mail
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto">E-mail Address</div></label>
+                <input type="text" name="entry.1076474683" value="" class="ss-q-short" id="entry_1076474683" dir="auto" aria-label="E-Mail E-mail Address " aria-required="true" required="" title="">
+                <div class="error-message" id="1516285863_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1289271267"><div class="ss-q-title">Gun Make
+                </div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto">Who made your GAT?</div></label>
+                <input type="text" name="entry.1289271267" value="" class="ss-q-short" id="entry_1289271267" dir="auto" aria-label="Gun Make Who made your GAT? " title="">
+                <div class="error-message" id="1791535229_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_1249860459"><div class="ss-q-title">Gun Model
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto">Model name &amp; Number</div></label>
+                <input type="text" name="entry.1249860459" value="" class="ss-q-short" id="entry_1249860459" dir="auto" aria-label="Gun Model Model name &amp; Number " aria-required="true" required="" title="">
+                <div class="error-message" id="953778147_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+                <label class="ss-q-item-label" for="entry_293508134"><div class="ss-q-title">Description
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                    <div class="ss-q-help ss-secondary-text" dir="auto">What's going on?</div></label>
+                <textarea name="entry.293508134" rows="8" cols="0" class="ss-q-long" id="entry_293508134" dir="auto" aria-label="Description What's going on? " aria-required="true" required=""></textarea>
+                <div class="error-message" id="1174162795_errorMessage"></div>
+                <div class="required-message">This is a required question</div>
+            </div></div></div>
+            <input type="hidden" name="draftResponse" value="[,,&quot;1228209100206174634&quot;]
+">
+            <input type="hidden" name="pageHistory" value="0">
+
+            <input type="hidden" name="fvv" value="0">
+
+
+            <input type="hidden" name="fbzx" value="1228209100206174634">
+
+            <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+                <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+            </tr></tbody></table></div></ol></form>
+    </div>
+</section>
 <!-- Dev Section Stuff -->
 <div class="dev-square"></div>
 

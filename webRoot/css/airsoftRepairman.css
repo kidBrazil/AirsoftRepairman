@@ -507,6 +507,9 @@ td.visible-lg {
 .hidden-text {
   visibility: hidden;
   position: absolute;
+  height: 0;
+  overflow: hidden;
+  width: 0;
 }
 /*
  * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
@@ -1018,7 +1021,7 @@ body {
   font-size: 18px;
   line-height: 1;
   color: #434343;
-  background-color: #cdcdcd;
+  background-color: #ececec;
   position: relative;
   z-index: 1;
 }
@@ -1059,11 +1062,32 @@ body {
     max-width: 1200px !important;
   }
 }
-.temporary {
-  width: 100vw;
-  height: 100vh;
-  background: url('../images/placeholder.jpg') center center;
-  background-size: cover;
+.content-section {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 5vh 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .content-section {
+    padding: 5vh 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-section {
+    padding: 5vh 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content-section {
+    padding: 5vw 0;
+  }
+}
+@media (min-width: 1200px) {
+  .content-section {
+    padding: 5vw 0;
+  }
 }
 * {
   -ms-box-sizing: border-box;
@@ -1228,7 +1252,7 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 15px;
+  font-size: 19px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   h4,
@@ -1256,12 +1280,12 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 8px;
+  font-size: 11px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   h5,
   .h5 {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1399,6 +1423,29 @@ a {
 }
 .mobile-btn {
   padding: 10px 5px;
+}
+.desktop-btn {
+  padding: 15px 7px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .desktop-btn {
+    padding: 15px 7px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .desktop-btn {
+    padding: 15px 8px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .desktop-btn {
+    padding: 15px 7px;
+  }
+}
+@media (min-width: 1200px) {
+  .desktop-btn {
+    padding: 15px 7px;
+  }
 }
 .cta-btn {
   width: auto;
@@ -1711,7 +1758,7 @@ a {
   min-width: 150px;
   height: 123px;
   z-index: 4;
-  background-image: url('../svg/airsoftRepairman-logoIcon-white.svg'), url('../svg/airsoftRepairman-NavBkg.svg');
+  background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'), url('../svg/airsoftRepairman-NavBkg.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 13px, top center;
   background-size: 45%, 100%;
@@ -1791,40 +1838,95 @@ a {
 .main-navigation .sub-mobile-social a {
   margin: 0 15px;
 }
+.main-social-bar {
+  padding: 2vh 0;
+  background: #9e0b0f;
+  color: #ffffff;
+}
+.main-social-bar .sub-social {
+  width: 15%;
+  font-size: 18px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-social-bar .sub-social {
+    width: 20%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-social-bar .sub-social {
+    width: 20%;
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-social-bar .sub-social {
+    width: 18%;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-social-bar .sub-social {
+    width: 15%;
+    font-size: 30px;
+  }
+}
 .about-us {
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 6vw 0;
+  padding: 6vh 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .about-us {
+    padding: 6vh 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us {
+    padding: 6vh 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-us {
+    padding: 6vw 0;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us {
+    padding: 6vw 0;
+  }
 }
 .about-us-welcome {
   width: 100%;
   position: relative;
+  text-align: center;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .about-us-welcome {
     width: 100%;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .about-us-welcome {
     width: 100%;
+    text-align: center;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-us-welcome {
     width: 55%;
+    text-align: left;
   }
 }
 @media (min-width: 1200px) {
   .about-us-welcome {
     width: 55%;
+    text-align: left;
   }
 }
 .about-us-welcome p {
   font-weight: 300;
   width: 100%;
+  text-align: left;
 }
 .about-us-welcome .commitment-list {
   list-style: none;
@@ -1842,10 +1944,34 @@ a {
   margin: 0 0 0 15px;
 }
 .about-us-welcome li i {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 300;
   position: relative;
   top: 5px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .about-us-welcome li i {
+    font-size: 25px;
+    top: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us-welcome li i {
+    font-size: 30px;
+    top: 5px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-us-welcome li i {
+    font-size: 35px;
+    top: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us-welcome li i {
+    font-size: 35px;
+    top: 5px;
+  }
 }
 .about-us-splash {
   display: none;
@@ -1877,11 +2003,114 @@ a {
   padding-top: 90%;
   margin: 0 auto;
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  background-image: url('../svg/airsoftRepairman-logoIcon-white.svg'), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/main-header-bkg-alternate.png');
+  background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('../images/main-header-bkg-alternate.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 50% 57%, 50% 50%,50% 50%;
   background-size: 80%,100%, cover;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.airsoft-services .airsoft-services-container {
+  width: 100%;
+  position: relative;
+  padding: 2vw 0;
+  margin: 0;
+}
+.airsoft-services .airsoft-service-item {
+  width: 100%;
+  margin: 2vw 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .airsoft-service-item {
+    width: 100%;
+    margin: 2vw 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .airsoft-service-item {
+    width: 100%;
+    margin: 2vw 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .airsoft-service-item {
+    width: 62%;
+    margin: -2.5vw 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .airsoft-service-item {
+    width: 62%;
+    margin: -2.5vw 0 0 0;
+  }
+}
+.airsoft-services .airsoft-service-item h3 {
+  color: #9e0b0f;
+}
+.airsoft-services .airsoft-service-item:first-child {
+  margin-top: 0;
+}
+.airsoft-services .airsoft-service-item .service-item-icon {
+  width: 25%;
+}
+.airsoft-services .airsoft-service-item .service-item-content {
+  width: 70%;
+}
+.airsoft-services .left-item {
+  float: left;
+}
+.airsoft-services .left-item .service-item-content {
+  text-align: left;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .left-item .service-item-content {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .left-item .service-item-content {
+    text-align: left;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .left-item .service-item-content {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .left-item .service-item-content {
+    text-align: right;
+  }
+}
+.airsoft-services .left-item .service-item-icon {
+  order: 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .left-item .service-item-icon {
+    order: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .left-item .service-item-icon {
+    order: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .left-item .service-item-icon {
+    order: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .left-item .service-item-icon {
+    order: 1;
+  }
+}
+.airsoft-services .right-item {
+  float: right;
+}
+.airsoft-services .right-item .service-item-icon {
+  order: 0;
 }
