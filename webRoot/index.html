@@ -13,6 +13,8 @@
     <!-- [ CSS / JS / FONTS - Initialize ] ------------------------------------------------------>
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Google Fonts -->
@@ -215,42 +217,6 @@
 
 <!-- Contact Section -->
 <section class="content-section contact-section">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var mapCanvas = document.getElementById('main-map');
-            var styles = [
-                {
-                    "stylers": [
-                        { "saturation": -100 },
-                        { "hue": "#9900ff" },
-                        { "gamma": 0.18 },
-                        { "lightness": 5 }
-                    ]
-                }
-            ];
-            // Create a new StyledMapType object, passing it the array of styles,
-            // as well as the name to be displayed on the map type control.
-            var styledMap = new google.maps.StyledMapType(styles,
-                    {name: "Styled Map"});
-
-            // Create a map object, and include the MapTypeId to add
-            // to the map type control.
-            var mapOptions = {
-                center: new google.maps.LatLng(42.9837, -81.2497),
-                zoom: 8,
-                disableDefaultUI: true,
-                mapTypeControlOptions: {
-                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-                }
-            };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-            //Associate the styled map with the MapTypeId and set it to display.
-            map.mapTypes.set('map_style', styledMap);
-            map.setMapTypeId('map_style');
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     <!-- Map Section -->
     <div class="contact-section-map">
         <div id="main-map"></div>
