@@ -1480,6 +1480,26 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.white-btn {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0);
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.white-btn:hover {
+  color: #ffffff;
+  background: #2ED42E!important;
+  border: 2px solid #2ED42E!important;
+  text-shadow: 1px 1.5px 4px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .facebook {
   color: inherit;
   font-size: inherit;
@@ -1524,6 +1544,21 @@ a {
   -o-transition: all inherit ease-in-out;
   transition: all inherit ease-in-out;
   color: #3b5998;
+}
+.contact-btn {
+  color: inherit;
+  font-size: inherit;
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+}
+.contact-btn:hover {
+  -webkit-transition: all inherit ease-in-out;
+  -moz-transition: all inherit ease-in-out;
+  -o-transition: all inherit ease-in-out;
+  transition: all inherit ease-in-out;
+  color: #ed1c24;
 }
 .splash-intro {
   width: 100%;
@@ -1842,6 +1877,27 @@ a {
   padding: 2vh 0;
   background: #9e0b0f;
   color: #ffffff;
+  display: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-social-bar {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-social-bar {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-social-bar {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .main-social-bar {
+    display: block;
+  }
 }
 .main-social-bar .sub-social {
   width: 15%;
@@ -1871,9 +1927,244 @@ a {
     font-size: 30px;
   }
 }
-#main-map {
-  width: 500px;
-  height: 500px;
+.contact-section {
+  overflow: hidden;
+  z-index: 1;
+  background: #ed1c24;
+}
+.contact-section .contact-section-map {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  right: 0;
+  bottom: -30px;
+  z-index: 2;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-section-map {
+    top: -30px;
+    left: -30px;
+    right: 0;
+    bottom: -30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-section-map {
+    top: -30px;
+    left: -30px;
+    right: 50%;
+    bottom: -30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-section-map {
+    top: -30px;
+    left: -30px;
+    right: 50%;
+    bottom: -30px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-section-map {
+    top: -30px;
+    left: -30px;
+    right: 50%;
+    bottom: -30px;
+  }
+}
+.contact-section .contact-section-map .map-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.contact-section .contact-section-map .map-canvas:before {
+  width: auto;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-section-map .map-canvas:before {
+    background: rgba(0, 0, 0, 0.9);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-section-map .map-canvas:before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-section-map .map-canvas:before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-section-map .map-canvas:before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.contact-section .content-wrapper {
+  z-index: 4!important;
+}
+.contact-section .contact-section-form {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+  order: 1;
+  color: #ffffff;
+  padding-top: 30px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-section-form {
+    width: 100%;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-section-form {
+    width: 50%;
+    padding-left: 2.5vw;
+    padding-top: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-section-form {
+    width: 50%;
+    padding-left: 2.5vw;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-section-form {
+    width: 50%;
+    padding-left: 2.5vw;
+    padding-top: 0;
+  }
+}
+.contact-section .contact-section-form p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 1vw 0;
+}
+.contact-section .contact-section-form h3 {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.contact-section .contact-section-form form {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
+.contact-section .contact-section-form form .ss-secondary-text,
+.contact-section .contact-section-form form .required-message {
+  display: none;
+}
+.contact-section .contact-section-form form input,
+.contact-section .contact-section-form form textarea {
+  width: 100%;
+  padding: 12px 8px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  margin: 15px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+.contact-section .contact-section-form form input[type="submit"] {
+  width: 40%;
+  margin: 20px auto 0 auto;
+  display: block;
+  position: relative;
+  font-weight: 600;
+}
+.contact-section .contact-section-form form input[type="submit"]:hover {
+  cursor: pointer;
+}
+.contact-section .contact-section-form form .ss-q-title {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.contact-section .contact-section-form form .ss-required-asterisk {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+  font-size: 25px;
+  position: absolute;
+  margin-left: 8px;
+  opacity: .8;
+}
+.contact-section .contact-information {
+  width: 100%;
+  order: 0;
+  z-index: 4;
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-information {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-information {
+    width: 50%;
+    padding-right: 2.5vw;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-information {
+    width: 50%;
+    padding-right: 2.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-information {
+    width: 50%;
+    padding-right: 2.5vw;
+  }
+}
+.contact-section .contact-information p {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0 10%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  hyphens: none;
+}
+.contact-section .contact-information a {
+  font-size: 55px;
+  display: inline-block;
+  margin: 0 8px;
+}
+.contact-section .contact-information a:first-child {
+  margin-left: 0!important;
+}
+.contact-section .contact-information a:last-child {
+  margin-right: 0!important;
+}
+.contact-section .contact-information .contacts-container {
+  overflow: hidden;
+}
+.contact-section .contact-information .contacts-container .contact-btn {
+  padding: 23px 12px!important;
 }
 .about-us {
   padding: 6vh 0;

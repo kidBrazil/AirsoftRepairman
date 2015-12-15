@@ -219,70 +219,86 @@
 <section class="content-section contact-section">
     <!-- Map Section -->
     <div class="contact-section-map">
-        <div id="main-map"></div>
+        <div id="main-map" class="map-canvas"></div>
     </div>
-    <!-- Contact Form Section -->
-    <div class="contact-section-form">
-        <form action="https://docs.google.com/forms/d/1T2N4Jp1SkXHbXvznHdemn3GrWWuURrdPPTCaZEtCGtE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
-            <div class="ss-form-question errorbox-good" role="listitem">
+    <!-- Content Wrapper -->
+    <div class="content-wrapper flex flex-start flex-wrap flex-middle">
+        <div class="contact-information" aria-label="Contact Information">
+            <h3>Serving London & GTA</h3>
+            <p class="margin-tb-m"> For any inquiries regarding existing Repair Orders or general questions about my services, feel free to contact me via e-mail or phone.</p>
+            <div class="contacts-container margin-top-l">
+                <a class="social-btn-w desktop-btn contact-btn" title="E-Mail Contact" href="mailto:airsoftrepairman@gmail.com" aria-label="E-Mail Contact">
+                    <i class="fa fa-envelope-o fa-fw"></i>
+                </a>
+                <a class="social-btn-w desktop-btn contact-btn" title="Phone Number" href="tel:+15198604261" aria-label="E-Mail Contact">
+                    <i class="fa fa-phone fa-fw"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Contact Form Section -->
+        <div class="contact-section-form" aria-labelledby="FormTitle">
+
+            <h2 id="FormTitle">Fix My Airsoft Gun</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non diam pharetra, aliquam ipsum dapibus, mollis nibh. Duis vulputate posuere interdum.</p>
+            <form action="https://docs.google.com/forms/d/1T2N4Jp1SkXHbXvznHdemn3GrWWuURrdPPTCaZEtCGtE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+                <div class="ss-form-question errorbox-good" role="listitem">
+                    <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                        <label class="ss-q-item-label" for="entry_173089346"><div class="ss-q-title">Name
+                            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                            <div class="ss-q-help ss-secondary-text" dir="auto">Enter your full name</div></label>
+                        <input type="text" name="entry.173089346" value="" class="ss-q-short" id="entry_173089346" dir="auto" aria-label="Name Enter your full name " aria-required="true" required="" title="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+                        <div class="error-message" id="1879606120_errorMessage"></div>
+                        <div class="required-message">This is a required question</div>
+                    </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
                 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-                    <label class="ss-q-item-label" for="entry_173089346"><div class="ss-q-title">Name
+                    <label class="ss-q-item-label" for="entry_1076474683"><div class="ss-q-title">E-Mail
                         <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
                         <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                        <div class="ss-q-help ss-secondary-text" dir="auto">Enter your full name</div></label>
-                    <input type="text" name="entry.173089346" value="" class="ss-q-short" id="entry_173089346" dir="auto" aria-label="Name Enter your full name " aria-required="true" required="" title="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
-                    <div class="error-message" id="1879606120_errorMessage"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto">E-mail Address</div></label>
+                    <input type="text" name="entry.1076474683" value="" class="ss-q-short" id="entry_1076474683" dir="auto" aria-label="E-Mail E-mail Address " aria-required="true" required="" title="">
+                    <div class="error-message" id="1516285863_errorMessage"></div>
                     <div class="required-message">This is a required question</div>
                 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-                <label class="ss-q-item-label" for="entry_1076474683"><div class="ss-q-title">E-Mail
-                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                    <div class="ss-q-help ss-secondary-text" dir="auto">E-mail Address</div></label>
-                <input type="text" name="entry.1076474683" value="" class="ss-q-short" id="entry_1076474683" dir="auto" aria-label="E-Mail E-mail Address " aria-required="true" required="" title="">
-                <div class="error-message" id="1516285863_errorMessage"></div>
-                <div class="required-message">This is a required question</div>
-            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
-                <label class="ss-q-item-label" for="entry_1289271267"><div class="ss-q-title">Gun Make
-                </div>
-                    <div class="ss-q-help ss-secondary-text" dir="auto">Who made your GAT?</div></label>
-                <input type="text" name="entry.1289271267" value="" class="ss-q-short" id="entry_1289271267" dir="auto" aria-label="Gun Make Who made your GAT? " title="">
-                <div class="error-message" id="1791535229_errorMessage"></div>
-                <div class="required-message">This is a required question</div>
-            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-                <label class="ss-q-item-label" for="entry_1249860459"><div class="ss-q-title">Gun Model
-                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                    <div class="ss-q-help ss-secondary-text" dir="auto">Model name &amp; Number</div></label>
-                <input type="text" name="entry.1249860459" value="" class="ss-q-short" id="entry_1249860459" dir="auto" aria-label="Gun Model Model name &amp; Number " aria-required="true" required="" title="">
-                <div class="error-message" id="953778147_errorMessage"></div>
-                <div class="required-message">This is a required question</div>
-            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
-                <label class="ss-q-item-label" for="entry_293508134"><div class="ss-q-title">Description
-                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-                    <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-                    <div class="ss-q-help ss-secondary-text" dir="auto">What's going on?</div></label>
-                <textarea name="entry.293508134" rows="8" cols="0" class="ss-q-long" id="entry_293508134" dir="auto" aria-label="Description What's going on? " aria-required="true" required=""></textarea>
-                <div class="error-message" id="1174162795_errorMessage"></div>
-                <div class="required-message">This is a required question</div>
-            </div></div></div>
-            <input type="hidden" name="draftResponse" value="[,,&quot;1228209100206174634&quot;]
+                <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1289271267"><div class="ss-q-title">Gun Make
+                    </div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto">Who made your GAT?</div></label>
+                    <input type="text" name="entry.1289271267" value="" class="ss-q-short" id="entry_1289271267" dir="auto" aria-label="Gun Make Who made your GAT? " title="">
+                    <div class="error-message" id="1791535229_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_1249860459"><div class="ss-q-title">Gun Model
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto">Model name &amp; Number</div></label>
+                    <input type="text" name="entry.1249860459" value="" class="ss-q-short" id="entry_1249860459" dir="auto" aria-label="Gun Model Model name &amp; Number " aria-required="true" required="" title="">
+                    <div class="error-message" id="953778147_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                <div dir="auto" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry">
+                    <label class="ss-q-item-label" for="entry_293508134"><div class="ss-q-title">Description
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto">What's going on?</div></label>
+                    <textarea name="entry.293508134" rows="8" cols="0" class="ss-q-long" id="entry_293508134" dir="auto" aria-label="Description What's going on? " aria-required="true" required=""></textarea>
+                    <div class="error-message" id="1174162795_errorMessage"></div>
+                    <div class="required-message">This is a required question</div>
+                </div></div></div>
+                <input type="hidden" name="draftResponse" value="[,,&quot;1228209100206174634&quot;]
 ">
-            <input type="hidden" name="pageHistory" value="0">
+                <input type="hidden" name="pageHistory" value="0">
 
-            <input type="hidden" name="fvv" value="0">
+                <input type="hidden" name="fvv" value="0">
 
 
-            <input type="hidden" name="fbzx" value="1228209100206174634">
-
-            <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-                <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
-            </tr></tbody></table></div></ol></form>
+                <input type="hidden" name="fbzx" value="1228209100206174634">
+                <input type="submit" name="submit" value="Submit" id="ss-submit" class="cta-btn white-btn jfk-button-action ">
+            </ol></form>
+        </div>
     </div>
+
 </section>
 <!-- Dev Section Stuff -->
 <div class="dev-square"></div>

@@ -60,6 +60,23 @@
   }
 }//red-btn
 
+.white-btn{
+  color:@white;
+  border:2px solid @white;
+  text-shadow:1px 1.5px 4px rgba(0,0,0,0);
+  background:transparent;
+  .transition(.3s);
+
+  &:hover{
+    color:@white;
+    background:#2ED42E!important;
+    border:2px solid #2ED42E!important;
+    text-shadow:1px 1.5px 4px rgba(0,0,0,.7);
+    .transition(.3s);
+  }
+}//red-btn
+
+
 
 // Social Buttons ---------------------
 .facebook{
@@ -92,5 +109,16 @@
   &:hover{
     .transition(inherit);
     color:@facebook;
+  }
+}//facebook Colors
+
+.contact-btn{
+  color:inherit;
+  font-size:inherit;
+  .transition(inherit);
+
+  &:hover{
+    .transition(inherit);
+    color:@main-color;
   }
 }//facebook Colors

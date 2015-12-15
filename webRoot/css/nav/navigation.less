@@ -131,6 +131,19 @@
   padding:2vh 0;
   background:@main-nav-bg;
   color:@white;
+  display:none;
+  @media @xs{
+    display:none;
+  }//Phablet
+  @media @sm{
+    display:block;
+  }//Tablet
+  @media @md{
+    display:block;
+  }//Laptop
+  @media @lg{
+    display:block;
+  }//Desktop
 
   .sub-social{
     width:15%;
