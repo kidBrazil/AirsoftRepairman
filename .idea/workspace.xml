@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7203c4fb-e189-4d96-a5aa-24302c00106c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/webRoot.zip" afterPath="$PROJECT_DIR$/webRoot/webRoot.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" afterPath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/buttons/buttons.less" afterPath="$PROJECT_DIR$/webRoot/css/buttons/buttons.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/index.html" afterPath="$PROJECT_DIR$/webRoot/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/js/main.js" afterPath="$PROJECT_DIR$/webRoot/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/nav/navigation.less" afterPath="$PROJECT_DIR$/webRoot/css/nav/navigation.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/forms/submit.less" afterPath="$PROJECT_DIR$/webRoot/css/forms/submit.less" />
     </list>
     <ignored path="AirsoftRepairman.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +29,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webRoot/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.03409091">
-                  <caret line="219" column="24" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.6375">
+                  <caret line="303" column="30" selection-start-line="303" selection-start-column="30" selection-end-line="303" selection-end-column="30" />
                   <folding>
                     <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#ol#0;n#form#0;n#div#1;n#div#1;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -186,9 +181,9 @@
         <option value="$PROJECT_DIR$/webRoot/css/content/about-us.less" />
         <option value="$PROJECT_DIR$/webRoot/js/main.js" />
         <option value="$PROJECT_DIR$/webRoot/css/buttons/buttons.less" />
-        <option value="$PROJECT_DIR$/webRoot/index.html" />
         <option value="$PROJECT_DIR$/webRoot/css/nav/navigation.less" />
         <option value="$PROJECT_DIR$/webRoot/css/forms/submit.less" />
+        <option value="$PROJECT_DIR$/webRoot/index.html" />
       </list>
     </option>
   </component>
@@ -588,7 +583,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15753424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -596,7 +591,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.075247526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.075247526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1015,21 +1010,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webRoot/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03409091">
-          <caret line="219" column="24" selection-start-line="219" selection-start-column="24" selection-end-line="219" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#ol#0;n#form#0;n#div#1;n#div#1;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webRoot/css/forms/submit.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8007034">
           <caret line="229" column="22" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webRoot/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6375">
+          <caret line="303" column="30" selection-start-line="303" selection-start-column="30" selection-end-line="303" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#ol#0;n#form#0;n#div#1;n#div#1;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
