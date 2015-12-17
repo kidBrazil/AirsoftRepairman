@@ -2409,3 +2409,52 @@ a {
 .airsoft-services .right-item .service-item-icon {
   order: 0;
 }
+.main-gallery {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #9e0b0f;
+}
+.main-gallery-item {
+  position: relative;
+  width: 16.667%;
+  height: 25vh;
+  display: block;
+}
+.main-gallery-item:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-gallery-item:hover:before {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.brands-gallery {
+  text-align: center;
+}
+.brands-gallery .brand-item {
+  display: block;
+  width: 18%;
+  position: relative;
+}
+.brands-gallery .brand-item img {
+  width: 100%;
+}

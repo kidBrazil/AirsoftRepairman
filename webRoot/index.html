@@ -11,14 +11,20 @@
     <!-- [ FACEBOOK OPEN GRAPH ] ---------------------------------------------------------------->
     <!-- [ TWITTER CARDS ] ---------------------------------------------------------------------->
     <!-- [ CSS / JS / FONTS - Initialize ] ------------------------------------------------------>
-    <!-- jQuery -->
+        <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <!-- FancyBox -->
+    <!--<script type="text/javascript" src="vendor/jquery.fancybox.js"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <!-- FontAwesome -->
+        <!-- FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
+        <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+        <!-- FancyBox -->
+    <link type="text/css" rel="stylesheet" href="vendor/jquery.fancybox.css">
+    <script type="text/javascript" src="vendor/jquery.fancybox.pack.js"></script>
+        <!-- Main JS -->
     <link type="text/css" rel="stylesheet" href="css/airsoftRepairman.css">
 </head>
 <body>
@@ -216,9 +222,9 @@
 </div><!-- main-social-bar / -->
 
 <!-- Contact Section -->
-<section class="content-section contact-section">
+<section id="Contact" aria-label="Contact Section" class="content-section contact-section">
     <!-- Map Section -->
-    <div class="contact-section-map">
+    <div aria-label="Map of London Ontario" class="contact-section-map">
         <div id="main-map" class="map-canvas"></div>
     </div>
     <!-- Content Wrapper -->
@@ -226,18 +232,17 @@
         <div class="contact-information" aria-label="Contact Information">
             <h3>Serving London & GTA</h3>
             <p class="margin-tb-m"> For any inquiries regarding existing Repair Orders or general questions about my services, feel free to contact me via e-mail or phone.</p>
-            <div class="contacts-container margin-top-l">
-                <a class="social-btn-w desktop-btn contact-btn" title="E-Mail Contact" href="mailto:airsoftrepairman@gmail.com" aria-label="E-Mail Contact">
+            <div class="contacts-container margin-top-l" aria-label="contact-details">
+                <a class="social-btn-w desktop-btn contact-btn" title="E-Mail Contact" href="mailto:airsoftrepairman@gmail.com" role="button" aria-label="E-Mail Contact">
                     <i class="fa fa-envelope-o fa-fw"></i>
                 </a>
-                <a class="social-btn-w desktop-btn contact-btn" title="Phone Number" href="tel:+15198604261" aria-label="E-Mail Contact">
+                <a class="social-btn-w desktop-btn contact-btn" title="Phone Number" href="tel:+15198604261" role="button" aria-label="Phone Contact">
                     <i class="fa fa-phone fa-fw"></i>
                 </a>
             </div>
         </div>
         <!-- Contact Form Section -->
         <div class="contact-section-form" aria-labelledby="FormTitle">
-
             <h2 id="FormTitle">Fix My Airsoft Gun</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non diam pharetra, aliquam ipsum dapibus, mollis nibh. Duis vulputate posuere interdum.</p>
             <form action="https://docs.google.com/forms/d/1T2N4Jp1SkXHbXvznHdemn3GrWWuURrdPPTCaZEtCGtE/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
@@ -289,10 +294,7 @@
                 <input type="hidden" name="draftResponse" value="[,,&quot;1228209100206174634&quot;]
 ">
                 <input type="hidden" name="pageHistory" value="0">
-
                 <input type="hidden" name="fvv" value="0">
-
-
                 <input type="hidden" name="fbzx" value="1228209100206174634">
                 <input type="submit" name="submit" value="Submit" id="ss-submit" class="cta-btn white-btn jfk-button-action ">
             </ol></form>
@@ -301,10 +303,29 @@
 </section><!-- Contact Section -->
 
 <!-- Gallery Section -->
-<section class="main-gallery">
-
+<section class="main-gallery flex flex-start flex-wrap">
+    <!-- Main Gallery Individual Item -->
 </section><!-- main-Gallery -->
 
+<!-- Brands Section -->
+<section class="content-section brands-gallery medium-bkg" aria-labelledby="trustedBrands">
+    <h3 id="trustedBrands" class="margin-bottom-l">Trusted Brands</h3>
+    <div class="brand-container flex flex-start flex-middle flex-center flex-wrap">
+        <a class="brand-item" href="#" target="_blank" title="Brand" aria-label="Brand" role="button">
+            <img src="images/media-HKGBB-2.png">
+        </a>
+    </div>
+</section><!-- Brands-Section -->
+
+<!-- Partners Section -->
+<section class="content-section brands-gallery dark-bkg" aria-labelledby="partnerSupplier">
+    <h3 id="partnerSupplier" class="margin-bottom-l">Partners & Suppliers</h3>
+    <div class="brand-container flex flex-start flex-middle flex-center flex-wrap">
+        <a class="brand-item" href="#" target="_blank" title="Brand" aria-label="Brand" role="button">
+            <img src="images/media-HKGBB-2.png">
+        </a>
+    </div>
+</section><!-- Partners -->
 
 <!-- Dev Section Stuff -->
 <div class="dev-square"></div>

@@ -1,16 +1,18 @@
+// Document Ready Function
 $(function() {
 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    // Call Fancybox
+    $(".main-gallery-item").fancybox();
+    // Call to Google Maps API.
+    google.maps.event.addDomListener(window, 'load', initializeMap);
+
+    // Generate Gallery
+    generateGallery(12);
+
 });
 
-
-
-
-
-
-
-//Initialize Parameters for G Maps
-function initialize() {
+//Initialize Parameters for G-Maps
+function initializeMap() {
     var mapCanvas = document.getElementById('main-map');
     var styles = [
         {
@@ -18,7 +20,7 @@ function initialize() {
                 { "saturation": -100 },
                 { "hue": "#9900ff" },
                 { "gamma": 0.18 },
-                { "lightness": 5 }
+                { "lightness": 11 }
             ]
         }
     ];
@@ -48,4 +50,16 @@ function initialize() {
     //Associate the styled map with the MapTypeId and set it to display.
     map.mapTypes.set('map_style', styledMap);
     map.setMapTypeId('map_style');
-}
+
+}//initializeMap
+
+
+//Initialize Gallery
+function generateGallery(images){
+
+    var loopCount = images;
+
+    for (i = 0; i < loopCount; i++) {
+        $('.main-gallery').append('<a class="main-gallery-item" style="background:url(http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg) 50% 50% no-repeat;background-size:cover;" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg"></a>');
+    }
+}//Generate Gallery
