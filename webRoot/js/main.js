@@ -64,13 +64,17 @@ $(function() {
                 position: 'fixed',
                 top: '0'
             });
+            $(mainNavigation).addClass( "transparency" );
+
             scrollFlag = true;
         }
         else if(top < mainHeaderObj.bottom){
             $(mainNavigation).css({
-                position: 'relative',
+                position
+                    : 'relative',
                 top: '0'
             });
+            $(mainNavigation).removeClass( "transparency" );
             scrollFlag = false;
         }
     });//[ SCROLL FUNCTION ] -----------------------
