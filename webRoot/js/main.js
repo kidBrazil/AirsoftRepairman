@@ -1,13 +1,79 @@
+//
+//
+// Base Styles for Airsoft Repairman
+// Written By: Lucas Moreira - l.moreira@live.ca
+//
+// ------------------------------------------------------
+// This File controls all of the dynamic elements of the site.
+//
+//-------------------------------------------------------
 // Document Ready Function
-$(function() {
+var mainHeaderObj   = null,
+    scrollFlag      = null;
 
-    // Call Fancybox
+$(function() {
+    // Call Fancybox --------------------------------
     $(".main-gallery-item").fancybox();
     // Call to Google Maps API.
     google.maps.event.addDomListener(window, 'load', initializeMap);
 
-    // Generate Gallery
+    // Generate Gallery -----------------------------
     generateGallery(12);
+
+    //Smooth Scroll ---------------------------------
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });//[ SMOOTH SCROLL ] ---------------------------
+
+    // Navigation Scroll & Window Resize -------------
+
+    // Variables and Objects for Nav
+    var mainNavigation  = '.main-navigation',
+        mainHeader      = '.splash-intro';
+
+    //Update the Nav Object on Load.
+        mainHeaderObj   = $(mainHeader)[0].getBoundingClientRect();
+
+    // Resize function - Used to Update the position of the nav.
+    $( window ).resize(function() {
+
+        if(!scrollFlag){
+            //For some reason if this is run immediately it goes wonky.
+            clearTimeout(window['menuWidthFix']);
+            window['menuWidthFix'] = setTimeout(function(){
+                mainHeaderObj   = $(mainHeader)[0].getBoundingClientRect();
+            }, 600);
+        }
+
+    });// [ RESIZE FUNCTION ] ----------------------
+
+    $( document ).scroll(function() {
+        var top = $(document).scrollTop();
+        //When User scrolls over Nav
+        if (top >= mainHeaderObj.bottom){
+            $(mainNavigation).css({
+                position: 'fixed',
+                top: '0'
+            });
+            scrollFlag = true;
+        }
+        else if(top < mainHeaderObj.bottom){
+            $(mainNavigation).css({
+                position: 'relative',
+                top: '0'
+            });
+            scrollFlag = false;
+        }
+    });//[ SCROLL FUNCTION ] -----------------------
 
 });
 
@@ -54,12 +120,38 @@ function initializeMap() {
 }//initializeMap
 
 
-//Initialize Gallery
+//Initialize Gallery -- LIVE VERSION OF THE CODE [ LIVE ]
 function generateGallery(images){
 
-    var loopCount = images;
-
-    for (i = 0; i < loopCount; i++) {
-        $('.main-gallery').append('<a class="main-gallery-item" style="background:url(http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg) 50% 50% no-repeat;background-size:cover;" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg"></a>');
-    }
+    //Dir where these will be kept
+    var dir = "/images/gallery/";
+    //Define Type of file
+    var fileType = ".png";
+    //Ajax request for images - Makes ure .htaccess exist with "Options +Indexes"
+    $.ajax({
+        url: dir,
+        success: function (data) {
+            //List all png file names in the gallery
+            $(data).find("a:contains(" + fileType + ")").each(function () {
+                var filename = this.href.replace(window.location.host, "").replace("http:///", "");
+                //Make it easier by combining the variables
+                var fileLocation = dir+filename;
+                $('.main-gallery').append("<a class='main-gallery-item' style='background:url("+ fileLocation + ") 50% 50% no-repeat;background-size:cover;' href="+ fileLocation +"></a>");
+            });
+        }
+    });
 }//Generate Gallery
+
+
+
+////Initialize Gallery -- TESTING LOCAL [ LOCAL ]
+//function generateGallery(images){
+//
+//
+//    //For Local testing use this function
+//    var loopCount = images;
+//
+//    for (i = 0; i < loopCount; i++) {
+//        $('.main-gallery').append('<a class="main-gallery-item" style="background:url(http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg) 50% 50% no-repeat;background-size:cover;" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg"></a>');
+//    }
+//}//Generate Gallery

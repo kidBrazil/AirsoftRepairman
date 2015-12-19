@@ -127,7 +127,9 @@
   }//sub-mobile-social
 }//main-navigation
 
-.main-social-bar{
+
+//Social Bar & Footer ----------------------
+.main-social-bar,.main-footer{
   padding:2vh 0;
   background:@main-nav-bg;
   color:@white;
@@ -166,4 +168,67 @@
       font-size:30px;
     }//Desktop
   }//sub-social
-}
+}//Social & Footer
+
+//Main Footer --------------
+.main-footer{
+  background:@main-color;
+  display:block;
+  @media @xs{
+    display:block;
+  }//Phablet
+  @media @sm{
+    display:block;
+  }//Tablet
+  @media @md{
+    display:block;
+  }//Laptop
+  @media @lg{
+    display:block;
+  }//Desktop
+
+  .footer-logo{
+    width:30%;
+    @media @xs{
+      width:30%;
+    }//Phablet
+    @media @sm{
+      width:25%;
+    }//Tablet
+    @media @md{
+      width:25%;
+    }//Laptop
+    @media @lg{
+      width:25%;
+    }//Desktop
+  }//.footer-logo
+
+  .sub-social{
+    width:30%;
+    font-size:25px;
+    @media @xs{
+      width:30%;
+      font-size:25px;
+    }//Phablet
+    @media @sm{
+      width:18%;
+      font-size:25px;
+    }//Tabket
+    @media @md{
+      width:18%;
+      font-size:30px;
+    }//Laptop
+    @media @lg{
+      width:15%;
+      font-size:30px;
+    }//Desktop
+  }//sub-social
+
+}//.main-footer Specific
+
+.bottom-stripe{
+  background:@main-nav-bg;
+  height:2vw;
+  width:100%;
+  position:relative;
+}//bottom-stripe

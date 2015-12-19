@@ -207,11 +207,24 @@
       font-weight:300;
       text-transform:uppercase;
       text-align:left;
-      padding:0 10%;
+      padding:0;
       text-shadow:2px 2px 2px rgba(0,0,0,.9);
       letter-spacing:1px;
       word-spacing:2px;
       hyphens: none;
+
+      @media @xs{
+        padding:0;
+      }//Phablet
+      @media @sm{
+        padding:0 10%;
+      }//Phablet
+      @media @md{
+        padding:0 10%;
+      }//Laptop
+      @media @lg{
+        padding:0 10%;
+      }//Desktop
     }//Intro copy
 
     a{

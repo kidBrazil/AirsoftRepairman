@@ -1873,59 +1873,150 @@ a {
 .main-navigation .sub-mobile-social a {
   margin: 0 15px;
 }
-.main-social-bar {
+.main-social-bar,
+.main-footer {
   padding: 2vh 0;
   background: #9e0b0f;
   color: #ffffff;
   display: none;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .main-social-bar {
+  .main-social-bar,
+  .main-footer {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .main-social-bar {
+  .main-social-bar,
+  .main-footer {
     display: block;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .main-social-bar {
+  .main-social-bar,
+  .main-footer {
     display: block;
   }
 }
 @media (min-width: 1200px) {
-  .main-social-bar {
+  .main-social-bar,
+  .main-footer {
     display: block;
   }
 }
-.main-social-bar .sub-social {
+.main-social-bar .sub-social,
+.main-footer .sub-social {
   width: 15%;
   font-size: 18px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .main-social-bar .sub-social {
+  .main-social-bar .sub-social,
+  .main-footer .sub-social {
     width: 20%;
     font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .main-social-bar .sub-social {
+  .main-social-bar .sub-social,
+  .main-footer .sub-social {
     width: 20%;
     font-size: 25px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .main-social-bar .sub-social {
+  .main-social-bar .sub-social,
+  .main-footer .sub-social {
     width: 18%;
     font-size: 30px;
   }
 }
 @media (min-width: 1200px) {
-  .main-social-bar .sub-social {
+  .main-social-bar .sub-social,
+  .main-footer .sub-social {
     width: 15%;
     font-size: 30px;
   }
+}
+.main-footer {
+  background: #ed1c24;
+  display: block;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-footer {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-footer {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer {
+    display: block;
+  }
+}
+.main-footer .footer-logo {
+  width: 30%;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-footer .footer-logo {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .footer-logo {
+    width: 25%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-footer .footer-logo {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer .footer-logo {
+    width: 25%;
+  }
+}
+.main-footer .sub-social {
+  width: 30%;
+  font-size: 25px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-footer .sub-social {
+    width: 30%;
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-footer .sub-social {
+    width: 18%;
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-footer .sub-social {
+    width: 18%;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer .sub-social {
+    width: 15%;
+    font-size: 30px;
+  }
+}
+.bottom-stripe {
+  background: #9e0b0f;
+  height: 2vw;
+  width: 100%;
+  position: relative;
 }
 .contact-section {
   overflow: hidden;
@@ -2143,11 +2234,31 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   text-align: left;
-  padding: 0 10%;
+  padding: 0;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   letter-spacing: 1px;
   word-spacing: 2px;
   hyphens: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-information p {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-information p {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-information p {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-information p {
+    padding: 0 10%;
+  }
 }
 .contact-section .contact-information a {
   font-size: 55px;
@@ -2419,9 +2530,33 @@ a {
 }
 .main-gallery-item {
   position: relative;
-  width: 16.667%;
+  width: 50%;
   height: 25vh;
   display: block;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-gallery-item {
+    width: 25%;
+    height: 25vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-gallery-item {
+    width: 25%;
+    height: 25vh;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main-gallery-item {
+    width: 16.666666%;
+    height: 25vh;
+  }
+}
+@media (min-width: 1200px) {
+  .main-gallery-item {
+    width: 16.666666%;
+    height: 25vh;
+  }
 }
 .main-gallery-item:before {
   display: block;
@@ -2449,12 +2584,66 @@ a {
 }
 .brands-gallery {
   text-align: center;
+  display: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .brands-gallery {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .brands-gallery {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .brands-gallery {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .brands-gallery {
+    display: block;
+  }
 }
 .brands-gallery .brand-item {
   display: block;
-  width: 18%;
+  width: 6%;
   position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .brands-gallery .brand-item img {
   width: 100%;
+}
+.brands-gallery .brand-item:hover {
+  width: 7%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.brands-gallery .brand-item-large {
+  display: block;
+  width: 28%;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.brands-gallery .brand-item-large img {
+  width: 100%;
+}
+.brands-gallery .brand-item-large:hover {
+  width: 30%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.fancybox-overlay {
+  background: rgba(0, 0, 0, 0.8);
 }

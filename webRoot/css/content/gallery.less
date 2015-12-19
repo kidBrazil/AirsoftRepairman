@@ -11,9 +11,26 @@
 
   &-item{
     position:relative;
-    width:16.667%;
+    width:50%;
     height:25vh;
     display:block;
+
+    @media @xs{
+      width:25%;
+      height:25vh;
+    }//Phablet
+    @media @sm{
+      width:25%;
+      height:25vh;
+    }//Tablet
+    @media @md{
+      width:16.666666%;
+      height:25vh;
+    }//Laptop
+    @media @lg{
+      width:16.666666%;
+      height:25vh;
+    }//Desktop
 
     &:before{
       display:block;
@@ -45,17 +62,51 @@
 //Brand section Gallery
 .brands-gallery{
   text-align:center;
+  display:none;
+
+  @media @xs{
+    display:none;
+  }//Desktop
+  @media @sm{
+    display:block;
+  }//Desktop
+  @media @md{
+    display:block;
+  }//Desktop
+  @media @lg{
+    display:block;
+  }//Desktop
+
   .brand-item{
     display:block;
-    width:18%;
+    width:6%;
     position:relative;
     .transition(.3s);
 
     img{width:100%;}
 
     &:hover{
-      width:19%;
+      width:7%;
+      .transition(.3s);
+    }
+  }//Brand Item
+
+  .brand-item-large{
+    display:block;
+    width:28%;
+    position:relative;
+    .transition(.3s);
+
+    img{width:100%;}
+
+    &:hover{
+      width:30%;
       .transition(.3s);
     }
   }//Brand Item
 }//brands-section
+
+//Fancybox Fixes
+.fancybox-overlay{
+  background:rgba(0,0,0,.8);
+}
