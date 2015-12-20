@@ -8,17 +8,24 @@
 //
 //-------------------------------------------------------
 // Document Ready Function
-var mainHeaderObj   = null,
-    scrollFlag      = null;
+var mainHeaderObj   = null;
 
 $(function() {
+    //Hide body for a sec to give it time to load images
+    $('body').css({opacity:0});
+
+    //If the window.Bind Load doesn't run fast enough Show the body anyway.
+    setTimeout(function(){
+        $('body').animate({
+            opacity: 1
+        }, 600, function() {
+            // Animation complete.
+        });
+    },2000);
     // Call Fancybox --------------------------------
     $(".main-gallery-item").fancybox();
     // Call to Google Maps API.
     google.maps.event.addDomListener(window, 'load', initializeMap);
-
-    // Generate Gallery -----------------------------
-    generateGallery(12);
 
     //Smooth Scroll ---------------------------------
     $('a[href*=#]:not([href=#])').click(function() {
@@ -40,45 +47,43 @@ $(function() {
     var mainNavigation  = '.main-navigation',
         mainHeader      = '.splash-intro';
 
-    //Update the Nav Object on Load.
-        mainHeaderObj   = $(mainHeader)[0].getBoundingClientRect();
-
-    // Resize function - Used to Update the position of the nav.
-    $( window ).resize(function() {
-
-        if(!scrollFlag){
-            //For some reason if this is run immediately it goes wonky.
-            clearTimeout(window['menuWidthFix']);
-            window['menuWidthFix'] = setTimeout(function(){
-                mainHeaderObj   = $(mainHeader)[0].getBoundingClientRect();
-            }, 600);
-        }
-
-    });// [ RESIZE FUNCTION ] ----------------------
-
     $( document ).scroll(function() {
-        var top = $(document).scrollTop();
-        //When User scrolls over Nav
-        if (top >= mainHeaderObj.bottom){
+
+        //Poll Object During scroll.
+        mainHeaderObj   = $(mainHeader)[0].getBoundingClientRect();
+        //If bottom of header passes frame
+        if( mainHeaderObj.bottom <= 0){
             $(mainNavigation).css({
-                position: 'fixed',
-                top: '0'
+                position    : 'fixed',
+                top         : '0'
             });
             $(mainNavigation).addClass( "transparency" );
-
             scrollFlag = true;
         }
-        else if(top < mainHeaderObj.bottom){
+        //Return
+        else{
             $(mainNavigation).css({
-                position
-                    : 'relative',
-                top: '0'
+                position    : 'relative',
+                top         : '0'
             });
             $(mainNavigation).removeClass( "transparency" );
             scrollFlag = false;
         }
     });//[ SCROLL FUNCTION ] -----------------------
 
+});
+
+$( window ).load(function() {
+
+    //Display-Body
+    $('body').animate({
+        opacity: 1
+    }, 600, function() {
+        // Animation complete.
+    });
+
+    // Generate Gallery -----------------------------
+    generateGallery(12);
 });
 
 //Initialize Parameters for G-Maps

@@ -11,6 +11,30 @@
   // Mobile Size
   //-----------------------------------
   .class{}
+  //Airsoft Repairman Splash ------------------------ //
+  .airsoft-repairman-splash{
+    position:relative;
+    width:80%;
+    padding-top:80%;
+    margin:0 auto;
+    background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'),
+    url('../images/main-header-bkg-alternate.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 57%,50% 50%;
+    background-size:80%, cover;
+    .rounded(50%);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }// airsoft-repairman-splash /
+
+  //Fix Main nav Logo
+  .main-navigation-logo{
+    background-size:75%, 100%;
+
+    &:hover{
+      background-size:77%, 100%;
+    }//Hover
+  }
 
   @media @xs{
     //
@@ -47,3 +71,21 @@
   }//Desktop
 
 }//Ie Fixes Media Query
+
+@-moz-document url-prefix() {
+  //Airsoft Repairman Splash ------------------------ //
+  .airsoft-repairman-splash{
+    position:relative;
+    width:80%;
+    padding-top:80%;
+    margin:0 auto;
+    background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'),
+    url('../images/main-header-bkg-alternate.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 57%,50% 50%;
+    background-size:80%, cover;
+    .rounded(50%);
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }// airsoft-repairman-splash /
+}

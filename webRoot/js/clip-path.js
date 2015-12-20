@@ -1,6 +1,4 @@
-/**
- * Created by KidBrazil on 12/12/2015.
- */
+
 (function ($) {
 
     $.fn.ClipPath = function (options) {

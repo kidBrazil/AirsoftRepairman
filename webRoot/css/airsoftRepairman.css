@@ -1375,6 +1375,15 @@ a {
   font-weight: inherit;
   font-size: inherit;
 }
+strong {
+  text-transform: uppercase!important;
+}
+.tiny {
+  font-size: 12px!important;
+  display: block;
+  width: 100%;
+  letter-spacing: 0;
+}
 .italics {
   font-style: italic!important;
 }
@@ -2660,4 +2669,44 @@ a {
 }
 .fancybox-overlay {
   background: rgba(0, 0, 0, 0.8);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .airsoft-repairman-splash {
+    position: relative;
+    width: 80%;
+    padding-top: 80%;
+    margin: 0 auto;
+    background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'), url('../images/main-header-bkg-alternate.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 57%,50% 50%;
+    background-size: 80%, cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  .main-navigation-logo {
+    background-size: 75%, 100%;
+  }
+  .main-navigation-logo:hover {
+    background-size: 77%, 100%;
+  }
+}
+@-moz-document url-prefix() {
+  .airsoft-repairman-splash {
+    position: relative;
+    width: 80%;
+    padding-top: 80%;
+    margin: 0 auto;
+    background-image: url('../svg/airsoftRepairman-LogoIcon-white.svg'), url('../images/main-header-bkg-alternate.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 57%,50% 50%;
+    background-size: 80%, cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
 }
