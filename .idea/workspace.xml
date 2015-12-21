@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7203c4fb-e189-4d96-a5aa-24302c00106c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" afterPath="$PROJECT_DIR$/webRoot/css/airsoftRepairman.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/index.html" afterPath="$PROJECT_DIR$/webRoot/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/js/main.js" afterPath="$PROJECT_DIR$/webRoot/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webRoot/css/content/services-section.less" afterPath="$PROJECT_DIR$/webRoot/css/content/services-section.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7203c4fb-e189-4d96-a5aa-24302c00106c" name="Default" comment="" />
     <ignored path="AirsoftRepairman.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
