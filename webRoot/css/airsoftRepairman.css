@@ -1308,18 +1308,18 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 3px;
+  font-size: 10px;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   h6,
   .h6 {
-    font-size: 3px;
+    font-size: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   h6,
   .h6 {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2174,12 +2174,35 @@ strong {
   position: relative;
   text-align: center;
 }
+.contact-section .contact-section-form h6 {
+  margin: 15px 0;
+}
 .contact-section .contact-section-form form {
   position: relative;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 15px 0 0 0;
   color: #ffffff;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .contact-section .contact-section-form form {
+    margin: 15px 0 0 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-section .contact-section-form form {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-section .contact-section-form form {
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section .contact-section-form form {
+    margin: 0;
+  }
 }
 .contact-section .contact-section-form form .ss-secondary-text,
 .contact-section .contact-section-form form .required-message {
@@ -2450,20 +2473,20 @@ strong {
 }
 .airsoft-services .airsoft-service-item {
   width: 100%;
-  margin: 2vw 0;
+  margin: 10vw 0;
   position: relative;
   z-index: 2;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .airsoft-services .airsoft-service-item {
     width: 100%;
-    margin: 2vw 0;
+    margin: 5vw 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .airsoft-services .airsoft-service-item {
     width: 100%;
-    margin: 2vw 0;
+    margin: 3vw 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2499,10 +2522,51 @@ strong {
 .airsoft-services .airsoft-service-item .service-item-icon {
   width: 25%;
   position: relative;
+  display: none;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .airsoft-service-item .service-item-icon {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .airsoft-service-item .service-item-icon {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .airsoft-service-item .service-item-icon {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .airsoft-service-item .service-item-icon {
+    display: block;
+  }
 }
 .airsoft-services .airsoft-service-item .service-item-content {
-  width: 70%;
   position: relative;
+  width: 100%;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .airsoft-service-item .service-item-content {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .airsoft-service-item .service-item-content {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .airsoft-service-item .service-item-content {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .airsoft-service-item .service-item-content {
+    width: 70%;
+  }
 }
 .airsoft-services .left-item {
   float: left;
@@ -2538,7 +2602,7 @@ strong {
   position: absolute;
   color: #9e0b0f;
   font-size: 15px;
-  left: 0;
+  left: auto;
   bottom: -40px;
   font-weight: 600;
   text-transform: uppercase;
@@ -2547,6 +2611,35 @@ strong {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  right: 0;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .airsoft-services .left-item .service-item-content .show-more,
+  .airsoft-services .left-item .service-item-content .show-less {
+    left: auto;
+    right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .airsoft-services .left-item .service-item-content .show-more,
+  .airsoft-services .left-item .service-item-content .show-less {
+    right: 0;
+    left: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .airsoft-services .left-item .service-item-content .show-more,
+  .airsoft-services .left-item .service-item-content .show-less {
+    left: 0;
+    right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .airsoft-services .left-item .service-item-content .show-more,
+  .airsoft-services .left-item .service-item-content .show-less {
+    left: 0;
+    right: auto;
+  }
 }
 .airsoft-services .left-item .service-item-content .show-more i,
 .airsoft-services .left-item .service-item-content .show-less i {
@@ -2588,7 +2681,7 @@ strong {
   left: 0;
   width: auto;
   right: 0;
-  bottom: 0;
+  height: auto;
   border: 4px solid #9e0b0f;
   opacity: 0;
   z-index: -1;
@@ -2613,6 +2706,7 @@ strong {
   padding: 4px 6px;
   background: #9e0b0f;
   font-size: 14px;
+  margin: 2px;
 }
 .airsoft-services .left-item .service-item-content .service-item-detail h4 {
   width: 100%;
@@ -2705,7 +2799,7 @@ strong {
   left: 0;
   width: auto;
   right: 0;
-  bottom: 0;
+  height: auto;
   border: 4px solid #9e0b0f;
   opacity: 0;
   z-index: -1;
@@ -2730,6 +2824,7 @@ strong {
   padding: 4px 6px;
   background: #9e0b0f;
   font-size: 14px;
+  margin: 2px;
 }
 .airsoft-services .right-item .service-item-detail h4 {
   width: 100%;

@@ -124,13 +124,30 @@
       text-align:center;
     }//h3
 
+    h6{
+      margin:15px 0;
+    }
+
     //Form Elements -------------
     form{
       position:relative;
       width:100%;
       padding:0;
-      margin:0;
+      margin:15px 0 0 0;
       color:@white;
+
+      @media @xs{
+        margin:15px 0 0 0;
+      }//Desktop
+      @media @sm{
+        margin:0;
+      }//Desktop
+      @media @md{
+        margin:0;
+      }//Desktop
+      @media @lg{
+        margin:0;
+      }//Desktop
 
       //Hide Help Text ( For Now )
       .ss-secondary-text,

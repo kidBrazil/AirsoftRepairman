@@ -33,7 +33,6 @@ $(function() {
     $('.show-more').click(function() {
         if(!$(this).parent().hasClass('active-content')){
             $(this).parent().addClass('active-content');
-            $(this).parent().append('active-content');
 
         }
     });
