@@ -22,10 +22,28 @@ $(function() {
             // Animation complete.
         });
     },2000);
+
     // Call Fancybox --------------------------------
     $(".main-gallery-item").fancybox();
+
     // Call to Google Maps API.
     google.maps.event.addDomListener(window, 'load', initializeMap);
+
+    //Show More Button
+    $('.show-more').click(function() {
+        if(!$(this).parent().hasClass('active-content')){
+            $(this).parent().addClass('active-content');
+            $(this).parent().append('active-content');
+
+        }
+    });
+
+    //Show More Button
+    $('.show-less').click(function() {
+        if($(this).parent().hasClass('active-content')){
+            $(this).parent().removeClass('active-content');
+        }
+    });
 
     //Smooth Scroll ---------------------------------
     $('a[href*=#]:not([href=#])').click(function() {

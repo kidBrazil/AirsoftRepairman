@@ -2451,6 +2451,8 @@ strong {
 .airsoft-services .airsoft-service-item {
   width: 100%;
   margin: 2vw 0;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .airsoft-services .airsoft-service-item {
@@ -2478,21 +2480,37 @@ strong {
 }
 .airsoft-services .airsoft-service-item h3 {
   color: #9e0b0f;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .airsoft-service-item p {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .airsoft-services .airsoft-service-item:first-child {
   margin-top: 0;
 }
 .airsoft-services .airsoft-service-item .service-item-icon {
   width: 25%;
+  position: relative;
 }
 .airsoft-services .airsoft-service-item .service-item-content {
   width: 70%;
+  position: relative;
 }
 .airsoft-services .left-item {
   float: left;
 }
 .airsoft-services .left-item .service-item-content {
   text-align: left;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .airsoft-services .left-item .service-item-content {
@@ -2513,6 +2531,94 @@ strong {
   .airsoft-services .left-item .service-item-content {
     text-align: right;
   }
+}
+.airsoft-services .left-item .service-item-content .show-more,
+.airsoft-services .left-item .service-item-content .show-less {
+  display: inline-block;
+  position: absolute;
+  color: #9e0b0f;
+  font-size: 15px;
+  left: 0;
+  bottom: -40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: .5vw 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .left-item .service-item-content .show-more i,
+.airsoft-services .left-item .service-item-content .show-less i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .left-item .service-item-content .show-more:hover,
+.airsoft-services .left-item .service-item-content .show-less:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ed1c24;
+  cursor: pointer;
+}
+.airsoft-services .left-item .service-item-content .show-more:hover i,
+.airsoft-services .left-item .service-item-content .show-less:hover i {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .left-item .service-item-content .service-item-detail {
+  color: #9e0b0f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #9e0b0f;
+  opacity: 0;
+  z-index: -1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .left-item .service-item-content .service-item-detail ul {
+  list-style: none;
+  padding: .5vw .25vw;
+}
+.airsoft-services .left-item .service-item-content .service-item-detail li {
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px 6px;
+  background: #9e0b0f;
+  font-size: 14px;
+}
+.airsoft-services .left-item .service-item-content .service-item-detail h4 {
+  width: 100%;
+  color: #9e0b0f;
+  border-bottom: 2px solid #9e0b0f;
+  padding: .25vw;
 }
 .airsoft-services .left-item .service-item-icon {
   order: 0;
@@ -2542,6 +2648,129 @@ strong {
 }
 .airsoft-services .right-item .service-item-icon {
   order: 0;
+}
+.airsoft-services .right-item .show-more,
+.airsoft-services .right-item .show-less {
+  display: inline-block;
+  position: absolute;
+  right: 0!important;
+  bottom: -40px;
+  color: #9e0b0f;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: .5vw 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .right-item .show-more i,
+.airsoft-services .right-item .show-less i {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .right-item .show-more:hover,
+.airsoft-services .right-item .show-less:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #ed1c24;
+  cursor: pointer;
+}
+.airsoft-services .right-item .show-more:hover i,
+.airsoft-services .right-item .show-less:hover i {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .right-item .service-item-detail {
+  color: #9e0b0f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #9e0b0f;
+  opacity: 0;
+  z-index: -1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.airsoft-services .right-item .service-item-detail ul {
+  list-style: none;
+  padding: .5vw .25vw;
+}
+.airsoft-services .right-item .service-item-detail li {
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 4px 6px;
+  background: #9e0b0f;
+  font-size: 14px;
+}
+.airsoft-services .right-item .service-item-detail h4 {
+  width: 100%;
+  color: #9e0b0f;
+  border-bottom: 2px solid #9e0b0f;
+  padding: .25vw;
+}
+.show-less {
+  opacity: 0!important;
+  bottom: -80px !important;
+  z-index: -1 !important;
+}
+.active-content h3,
+.active-content p,
+.active-content .show-more {
+  opacity: 0!important;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.active-content .service-item-detail {
+  opacity: 1!important;
+  z-index: 3!important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.active-content .show-less {
+  opacity: 1!important;
+  bottom: -40px !important;
+  z-index: 2!important;
+}
+.show-more,
+.show-less {
+  z-index: 5;
+}
+.show-less.active-less {
+  display: block!important;
 }
 .main-gallery {
   width: 100%;
