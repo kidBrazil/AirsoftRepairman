@@ -13,19 +13,19 @@
   //Abstractions
   .airsoft-service-item{
     width:100%;
-    margin:2vw 0;
+    margin:10vw 0;
     position:relative;
     z-index:2;
     //margin-top:-2.5vw;
 
     @media @xs{
       width:100%;
-      margin:2vw 0;
+      margin:5vw 0;
       //margin-top:-2.5vw;
     }//Phablet
     @media @sm{
       width:100%;
-      margin:2vw 0;
+      margin:3vw 0;
       //margin-top:-2.5vw;
     }//Tablet
     @media @md{
@@ -57,11 +57,36 @@
     .service-item-icon{
       width:25%;
       position:relative;
+      display:none;
+      @media @xs{
+        display:block;
+      }//Desktop
+      @media @sm{
+        display:block;
+      }//Desktop
+      @media @md{
+        display:block;
+      }//Desktop
+      @media @lg{
+        display:block;
+      }//Desktop
     }//Icon Size
 
     .service-item-content{
-      width:70%;
       position:relative;
+      width:100%;
+      @media @xs{
+        width:70%;
+      }//Desktop
+      @media @sm{
+        width:70%;
+      }//Desktop
+      @media @md{
+        width:70%;
+      }//Desktop
+      @media @lg{
+        width:70%;
+      }//Desktop
     }//Text Content
   }//individual Floated Rows
 
@@ -91,12 +116,29 @@
         position:absolute;
         color:@secondary-color;
         font-size:15px;
-        left:0;
+        left:auto;
         bottom:-40px;
         font-weight:600;
         text-transform:uppercase;
         margin:.5vw 0;
         .transition(.3s);
+        right:0;
+        @media @xs{
+          left:auto;
+          right:0;
+        }//Desktop
+        @media @sm{
+          right:0;
+          left:auto;
+        }//Desktop
+        @media @md{
+          left:0;
+          right:auto;
+        }//Desktop
+        @media @lg{
+          left:0;
+          right:auto;
+        }//Desktop
         //Icon
         i{
           .scale(1);
@@ -113,6 +155,7 @@
         }//Hover;
       }//show-more /
 
+
       //Service-Item-Detail---------------
       .service-item-detail{
         color:@secondary-color;
@@ -121,7 +164,7 @@
         left:0;
         width:auto;
         right:0;
-        bottom:0;
+        height:auto;
         border:4px solid @secondary-color;
         opacity:0;
         z-index:-1;
@@ -140,6 +183,7 @@
           padding:4px 6px;
           background:@secondary-color;
           font-size:14px;
+          margin:2px;
         }
         h4{
           width:100%;
@@ -211,7 +255,7 @@
       left:0;
       width:auto;
       right:0;
-      bottom:0;
+      height:auto;
       border:4px solid @secondary-color;
       opacity:0;
       z-index:-1;
@@ -230,6 +274,7 @@
         padding:4px 6px;
         background:@secondary-color;
         font-size:14px;
+        margin:2px;
       }
       h4{
         width:100%;
@@ -273,9 +318,6 @@
 .show-more,.show-less{
   z-index:5;
 }
-
-
-
 .show-less.active-less{
   display:block!important;
 }
